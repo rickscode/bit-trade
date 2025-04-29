@@ -1,0 +1,10 @@
+python-binance
+pandas
+numpy
+TA-Lib
+python-dotenv
+vectorbt
+matplotlib
+plotly
+requests
+groq
