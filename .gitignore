@@ -31,11 +31,11 @@ ENV/
 *.swo
 
 # Project specific
-data/
-formatted_data/
-prepared_data/
-*.csv
-*.json
+# data/
+# formatted_data/
+# prepared_data/
+# *.csv
+# *.json
 
 # Logs
 *.log
