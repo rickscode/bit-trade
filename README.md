@@ -101,7 +101,7 @@ BINANCE_API_SECRET=
 
 ---
 
-## 🧪 Usage
+## Usage
 
 ```bash
 # Fetch data
