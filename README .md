@@ -1,13 +1,13 @@
 # Bit-Trade: Autonomous Crypto Trading Agent
 
-> MVP a fully automated trading research system powered by LLMs. Designed to **think, act, evaluate, and adapt** — without human intervention.
+> MVP a fully automated trading research system powered by deep learning and fine-tuned LLMs. Designed to **think, act, evaluate, and adapt** — without human intervention.
 
 ---
 
 ## Project Goal
 
 To build an agentic system that:
-- **Thinks**: Uses LLMs to generate math trading strategies
+- **Thinks**: Uses deep learning to generate math trading strategies
 - **Acts**: Applies and backtests the strategy using historical market data
 - **Evaluates**: Judges performance and determines viability
 - **Adapts**: Learns, saves, or regenerates strategies based on results
