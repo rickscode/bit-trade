@@ -7,6 +7,10 @@ from supabase import create_client, Client
 from dotenv import load_dotenv
 import random
 import numpy as np
+try:
+    from .multi_llm_manager import MultiLLMManager
+except ImportError:
+    from multi_llm_manager import MultiLLMManager
 
 load_dotenv()
 
@@ -17,6 +21,10 @@ class StrategyLearningSystem:
             os.getenv("SUPABASE_URL"),
             os.getenv("SUPABASE_KEY")
         )
+        
+        # Initialize multi-LLM manager
+        self.llm_manager = MultiLLMManager()
+        print("🤖 Multi-LLM Manager initialized with 5 free Groq models")
         
         # Strategy templates for diversification
         self.strategy_templates = [
@@ -89,6 +97,29 @@ class StrategyLearningSystem:
         
         return patterns
 
+    def _calculate_market_conditions(self, market_data):
+        """Calculate market conditions for Q-learning agent"""
+        try:
+            # Calculate volatility
+            returns = market_data['close'].pct_change().dropna()
+            volatility = returns.std()
+            
+            # Calculate trend (price change over period)
+            price_change = (market_data['close'].iloc[-1] - market_data['close'].iloc[0]) / market_data['close'].iloc[0]
+            
+            # Calculate recent performance (last 20 periods)
+            recent_data = market_data.tail(min(20, len(market_data)))
+            recent_performance = (recent_data['close'].iloc[-1] - recent_data['close'].iloc[0]) / recent_data['close'].iloc[0]
+            
+            return {
+                'volatility': volatility,
+                'trend': price_change,
+                'recent_performance': recent_performance
+            }
+        except Exception as e:
+            print(f"Error calculating market conditions: {e}")
+            return {'volatility': 0.02, 'trend': 0.0, 'recent_performance': 0.0}
+
     def generate_enhanced_strategy(self, market_data, learning_insights=None):
         """Generate strategy with learning insights and diversification"""
         
@@ -96,6 +127,9 @@ class StrategyLearningSystem:
         strategy_type = random.choice(self.strategy_templates)
         selected_indicators = random.sample(self.indicators, random.randint(2, 4))
         risk_style = random.choice(self.risk_styles)
+        
+        # Calculate market conditions for Q-learning
+        market_conditions = self._calculate_market_conditions(market_data)
         
         # Build enhanced prompt with learning insights
         prompt = f"""
@@ -123,14 +157,20 @@ class StrategyLearningSystem:
         """
         
         try:
-            response = self.groq_client.chat.completions.create(
-                messages=[{"role": "user", "content": prompt}],
-                model="llama-3.3-70b-versatile",
-                temperature=0.7,
-                max_tokens=2048,
+            # Select model using multi-LLM manager with market data for Q-learning
+            selected_model = self.llm_manager.select_model(
+                task_type="strategy_generation", 
+                strategy_index=self.llm_manager.strategy_counter,
+                market_data=market_conditions
             )
             
-            strategy_content = response.choices[0].message.content
+            print(f"🎯 Generating strategy with model: {selected_model}")
+            print(f"📊 Market conditions: {market_conditions}")
+            
+            # Generate strategy using selected model
+            strategy_content, metadata = self.llm_manager.generate_with_model(
+                prompt, selected_model
+            )
             
             # Enhanced strategy metadata
             strategy_data = {
@@ -138,14 +178,24 @@ class StrategyLearningSystem:
                 "indicators": selected_indicators,
                 "risk_style": risk_style,
                 "generation_timestamp": datetime.now().isoformat(),
-                "learning_version": "v2.0",
+                "learning_version": "v2.2_q_learning",
+                "model_used": selected_model,
+                "market_conditions": market_conditions,
+                "model_metadata": {
+                    "model_key": metadata.get("model_key"),
+                    "model_name": metadata.get("model_name"),
+                    "timestamp": metadata.get("timestamp")
+                },
                 "content": strategy_content
             }
+            
+            # Increment counter for round-robin selection
+            self.llm_manager.increment_strategy_counter()
             
             return strategy_data
             
         except Exception as e:
-            print(f"Error generating strategy: {e}")
+            print(f"Error generating strategy with multi-LLM: {e}")
             return None
 
     def batch_generate_strategies(self, market_data, num_strategies=10):
@@ -221,22 +271,40 @@ class StrategyLearningSystem:
                 print("Waiting before next cycle...")
                 # time.sleep(30)  # Uncomment for actual rate limiting
         
+        # End Q-learning cycle after all strategies are processed
+        self.llm_manager.end_q_learning_cycle()
+        
         print(f"\n🎯 Recursive learning complete! Generated {len(all_results)} strategies across {cycles} cycles.")
+        
+        # Show Q-learning statistics
+        q_stats = self.llm_manager.get_q_learning_stats()
+        if q_stats:
+            print(f"🧠 Q-learning stats: {q_stats}")
+        
         return all_results
 
-    def save_strategy_to_db(self, strategy, metrics, is_successful):
-        """Save strategy to Supabase database"""
+    def save_strategy_to_db(self, strategy, metrics, is_successful, next_market_data=None):
+        """Save strategy to Supabase database and update model performance"""
         try:
+            # Get model information
+            model_used = strategy.get('model_used', 'unknown')
+            
             record = {
                 "symbol": "BTCUSDT",  # Default symbol
                 "interval": "1day",   # Default interval
                 "strategy_code": json.dumps(strategy),
                 "metrics": metrics,
-                "llm_notes": f"Generated by enhanced learning system v2.0 - {strategy.get('strategy_type', 'unknown')}",
+                "llm_notes": f"Generated by enhanced learning system v2.2 Q-learning - {strategy.get('strategy_type', 'unknown')} - Model: {model_used}",
                 "is_successful": is_successful
             }
             
             response = self.supabase.table("trading-strategies").insert(record).execute()
+            
+            # Update model performance tracking with Q-learning
+            if model_used != 'unknown':
+                self.llm_manager.update_model_performance(model_used, metrics, is_successful, next_market_data)
+                print(f"📊 Updated performance for model: {model_used}")
+            
             return response.data
             
         except Exception as e:
@@ -251,6 +319,9 @@ class StrategyLearningSystem:
             
             total_strategies = len(strategies)
             successful_strategies = len([s for s in strategies if s.get("is_successful", False)])
+            
+            # Get model performance report
+            model_performance = self.llm_manager.get_performance_report()
             
             if total_strategies > 0:
                 success_rate = (successful_strategies / total_strategies) * 100
@@ -268,14 +339,32 @@ class StrategyLearningSystem:
                         "success_rate": success_rate,
                         "avg_return": avg_return,
                         "avg_sharpe": avg_sharpe,
-                        "avg_winrate": avg_winrate
+                        "avg_winrate": avg_winrate,
+                        "model_performance": model_performance,
+                        "q_learning_stats": self.llm_manager.get_q_learning_stats()
                     }
             
-            return {"total_strategies": total_strategies, "successful_strategies": 0, "success_rate": 0}
+            return {
+                "total_strategies": total_strategies, 
+                "successful_strategies": 0, 
+                "success_rate": 0,
+                "model_performance": model_performance,
+                "q_learning_stats": self.llm_manager.get_q_learning_stats()
+            }
             
         except Exception as e:
             print(f"Error getting statistics: {e}")
             return {}
+    
+    def enable_q_learning(self, enable: bool = True):
+        """Enable or disable Q-learning for model selection"""
+        self.llm_manager.enable_q_learning(enable)
+        print(f"🧠 Q-learning {'enabled' if enable else 'disabled'} for strategy learning system")
+    
+    def set_model_selection_mode(self, mode: str):
+        """Set model selection mode (round_robin, performance_based, weighted_random, market_adaptive)"""
+        self.llm_manager.switch_selection_mode(mode)
+        print(f"🔄 Model selection mode set to: {mode}")
 
 if __name__ == "__main__":
     # Initialize the learning system

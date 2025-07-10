@@ -177,8 +177,18 @@ class EnhancedBacktestSystem:
         avg_winning_trade = trades[trades['PnL'] > 0]['PnL'].mean() if winning_trades > 0 else 0
         avg_losing_trade = trades[trades['PnL'] < 0]['PnL'].mean() if total_trades > winning_trades else 0
         
-        # Duration metrics
-        avg_trade_duration = trades['Duration'].mean() if total_trades > 0 else 0
+        # Duration metrics (handle missing Duration column)
+        if 'Duration' in trades.columns:
+            avg_trade_duration = trades['Duration'].mean() if total_trades > 0 else 0
+        else:
+            # Calculate duration from Entry and Exit times if available
+            if 'Entry Timestamp' in trades.columns and 'Exit Timestamp' in trades.columns:
+                entry_times = pd.to_datetime(trades['Entry Timestamp'])
+                exit_times = pd.to_datetime(trades['Exit Timestamp'])
+                durations = (exit_times - entry_times).dt.total_seconds() / 3600  # Convert to hours
+                avg_trade_duration = durations.mean() if total_trades > 0 else 0
+            else:
+                avg_trade_duration = 0
         
         return {
             "Start": str(portfolio.wrapper.index[0]),

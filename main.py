@@ -58,6 +58,14 @@ def main():
         print(f"   Total Strategies: {stats.get('total_strategies', 0)}")
         print(f"   Successful: {stats.get('successful_strategies', 0)}")
         print(f"   Success Rate: {stats.get('success_rate', 0):.2f}%")
+        
+        # Show model performance
+        model_perf = stats.get('model_performance', {})
+        if model_perf.get('model_rankings'):
+            print(f"\n🤖 Model Performance Rankings:")
+            for i, model_stats in enumerate(model_perf['model_rankings'][:3]):  # Top 3
+                print(f"   {i+1}. {model_stats['model']}: {model_stats['success_rate']:.2f}% success, {model_stats['avg_return']:.2f}% avg return")
+        
         print("✅ Learning phase complete!\n")
     
     if args.mode in ["backtest", "full"]:

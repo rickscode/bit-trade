@@ -1,0 +1,23 @@
+{
+  "strategy_type": "volatility_trading",
+  "indicators": [
+    "MACD",
+    "CCI",
+    "Williams %R"
+  ],
+  "risk_style": "position_sizing",
+  "generation_timestamp": "2025-07-10T13:13:59.704738",
+  "learning_version": "v2.2_q_learning",
+  "model_used": "versatile",
+  "market_conditions": {
+    "volatility": 0.01935640627104757,
+    "trend": 0.220669560754196,
+    "recent_performance": 0.018124013772460004
+  },
+  "model_metadata": {
+    "model_key": "versatile",
+    "model_name": "llama-3.3-70b-versatile",
+    "timestamp": "2025-07-10T13:13:59.704725"
+  },
+  "content": "```json\n{\n  \"strategy_type\": \"Volatility Trading\",\n  \"indicators\": [\n    {\n      \"name\": \"MACD\",\n      \"params\": {\n        \"fast_period\": 12,\n        \"slow_period\": 26,\n        \"signal_period\": 9\n      }\n    },\n    {\n      \"name\": \"CCI\",\n      \"params\": {\n        \"period\": 20\n      }\n    },\n    {\n      \"name\": \"Williams %R\",\n      \"params\": {\n        \"period\": 14\n      }\n    }\n  ],\n  \"entry_rules\": [\n    {\n      \"long\": \"MACD > signal line and CCI < -100 and Williams %R < -80\"\n    },\n    {\n      \"short\": \"MACD < signal line and CCI > 100 and Williams %R > -20\"\n    }\n  ],\n  \"exit_rules\": [\n    {\n      \"long\": \"MACD < signal line or CCI > 100 or Williams %R > -20\"\n    },\n    {\n      \"short\": \"MACD > signal line or CCI < -100 or Williams %R < -80\"\n    }\n  ],\n  \"risk_management\": {\n    \"position_sizing\": \"2% of equity per trade\",\n    \"stop_loss\": \"2% below entry price for long, 2% above entry price for short\",\n    \"take_profit\": \"5% above entry price for long, 5% below entry price for short\"\n  },\n  \"code\": \"\nimport pandas as pd\nimport numpy as np\n\ndef calculate_macd(price, fast_period, slow_period, signal_period):\n  ema_fast = price.ewm(span=fast_period, adjust=False).mean()\n  ema_slow = price.ewm(span=slow_period, adjust=False).mean()\n  macd = ema_fast - ema_slow\n  signal = macd.ewm(span=signal_period, adjust=False).mean()\n  return macd, signal\n\ndef calculate_cci(high, low, close, period):\n  tp = (high + low + close) / 3\n  cci = (tp - tp.rolling(window=period).mean()) / (0.015 * tp.rolling(window=period).std())\n  return cci\n\ndef calculate_williams_r(high, low, close, period):\n  highest_high = high.rolling(window=period).max()\n  lowest_low = low.rolling(window=period).min()\n  wr = -100 * ((highest_high - close) / (highest_high - lowest_low))\n  return wr\n\ndef trading_strategy(data):\n  macd, signal = calculate_macd(data['Close'], 12, 26, 9)\n  cci = calculate_cci(data['High'], data['Low'], data['Close'], 20)\n  wr = calculate_williams_r(data['High'], data['Low'], data['Close'], 14)\n\n  long_entry = (macd > signal) & (cci < -100) & (wr < -80)\n  short_entry = (macd < signal) & (cci > 100) & (wr > -20)\n\n  long_exit = (macd < signal) | (cci > 100) | (wr > -20)\n  short_exit = (macd > signal) | (cci < -100) | (wr < -80)\n\n  positions = pd.DataFrame(index=data.index)\n  positions['long'] = long_entry\n  positions['short'] = short_entry\n\n  trades = pd.DataFrame(index=data.index)\n  trades['long_entry'] = long_entry\n  trades['long_exit'] = long_exit\n  trades['short_entry'] = short_entry\n  trades['short_exit'] = short_exit\n\n  return positions, trades\n\n# Example usage\ndata = pd.read_csv('market_data.csv')\npositions, trades = trading_strategy(data)\n\n# Position sizing logic\nequity = 100000\nposition_size = 0.02 * equity\n\n# Stop-loss and take-profit levels\nstop_loss_long = data['Close'] * 0.98\nstop_loss_short = data['Close'] * 1.02\ntake_profit_long = data['Close'] * 1.05\ntake_profit_short = data['Close'] * 0.95\n\"\n}\n```"
+}

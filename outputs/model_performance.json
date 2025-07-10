@@ -1,0 +1,52 @@
+{
+  "versatile": {
+    "strategies_generated": 21,
+    "successful_strategies": 11,
+    "total_return": 149.34116928312963,
+    "total_sharpe": 23.89322348095023,
+    "best_strategy_return": 16.073813892765386,
+    "avg_return": 7.111484251577601,
+    "avg_sharpe": 1.1377725467119157,
+    "success_rate": 0.5238095238095238
+  },
+  "analytical": {
+    "strategies_generated": 14,
+    "successful_strategies": 10,
+    "total_return": 182.2998581856015,
+    "total_sharpe": 16.080001855496224,
+    "best_strategy_return": 24.155065759985888,
+    "avg_return": 13.021418441828677,
+    "avg_sharpe": 1.1485715611068732,
+    "success_rate": 0.7142857142857143
+  },
+  "maverick": {
+    "strategies_generated": 5,
+    "successful_strategies": 4,
+    "total_return": 98.13305779767762,
+    "total_sharpe": 4.024358923049239,
+    "best_strategy_return": 26.74707979116823,
+    "avg_return": 19.626611559535526,
+    "avg_sharpe": 0.8048717846098479,
+    "success_rate": 0.8
+  },
+  "scout": {
+    "strategies_generated": 5,
+    "successful_strategies": 3,
+    "total_return": 19.116683501597947,
+    "total_sharpe": 6.131829507942539,
+    "best_strategy_return": 12.993332324104468,
+    "avg_return": 3.8233367003195893,
+    "avg_sharpe": 1.2263659015885078,
+    "success_rate": 0.6
+  },
+  "diverse": {
+    "strategies_generated": 8,
+    "successful_strategies": 3,
+    "total_return": 38.32126385530368,
+    "total_sharpe": 9.306639946949854,
+    "best_strategy_return": 23.034399333179387,
+    "avg_return": 4.79015798191296,
+    "avg_sharpe": 1.1633299933687318,
+    "success_rate": 0.375
+  }
+}
