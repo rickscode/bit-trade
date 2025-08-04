@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## System Overview
 
-**Bit-Trade v2.2** - An autonomous crypto trading agent with:
-- **8 AI Models**: 5 Groq + 3 Cloudflare Workers AI models
+**Bit-Trade v2.3** - An autonomous crypto trading agent with:
+- **23+ AI Models**: 5 Groq + 3 Cloudflare + 15+ OpenRouter free models
 - **Q-Learning**: Intelligent model selection based on market conditions
 - **Reinforcement Learning**: Continuous strategy optimization
-- **Multi-Provider Architecture**: Groq + Cloudflare for redundancy and diversity
+- **Multi-Provider Architecture**: Groq + Cloudflare + OpenRouter for maximum redundancy and diversity
 
 ## Quick Start
 
@@ -33,6 +33,7 @@ python main.py --mode backtest   # Backtesting only
 Required environment variables in `.env`:
 - `GROQ_API_KEY`: For 5 Groq LLM models
 - `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_AUTH_TOKEN`: For 3 Cloudflare AI models (optional)
+- `OPENROUTER_API_KEY`: For 15+ OpenRouter free models (optional but recommended)
 - `SUPABASE_URL` and `SUPABASE_KEY`: For database operations
 - `BINANCE_API_KEY` and `BINANCE_API_SECRET`: For market data fetching
 - `USE_Q_LEARNING=true`: Enable intelligent model selection (optional)
@@ -43,9 +44,10 @@ Required environment variables in `.env`:
 bit-trade/
 ├── main.py                     # Main entry point for enhanced system
 ├── core/                       # Enhanced core modules
-│   ├── multi_llm_manager.py           # 8-model AI orchestration with Q-learning
+│   ├── multi_llm_manager.py           # 23+ model AI orchestration with Q-learning
 │   ├── cloudflare_ai_client.py        # Cloudflare Workers AI integration  
-│   ├── q_learning_agent.py            # Q-learning model selector
+│   ├── openrouter_ai_client.py        # OpenRouter AI integration (15+ free models)
+│   ├── q_learning_agent.py            # Q-learning model selector (expanded)
 │   ├── strategy_learning_system.py    # Recursive learning system
 │   ├── enhanced_data_collector.py     # Multi-asset data collection
 │   ├── enhanced_backtest_system.py    # Comprehensive backtesting
@@ -72,12 +74,13 @@ bit-trade/
 - **50+ Technical Indicators**: RSI, MACD, Bollinger Bands, etc.
 - **Synthetic Scenarios**: Crash, bubble, recovery simulations
 
-### 2. Multi-LLM Orchestration (`core/multi_llm_manager.py`)
-- **8 AI Models**: 5 Groq + 3 Cloudflare Workers AI models
-- **Q-Learning Selection**: Intelligent model choice based on market conditions
-- **Cross-Provider Redundancy**: Automatic fallback between providers
-- **Performance Tracking**: Per-model success rate and optimization
-- **Adaptive Learning**: Model selection improves over time
+### 2. AI Quant Fund Team (`core/multi_llm_manager.py`) - Renaissance Technologies Model
+- **23+ AI "Staff Members"**: 5 Core Team (Groq) + 15+ Specialists (OpenRouter) + 3 Senior Advisors (Cloudflare)
+- **Team Collaboration**: Ensemble consensus with multi-model collaboration (not just fallback)
+- **Hierarchical Structure**: Core Team → Specialists → Advisory Board (Groq → OpenRouter → Cloudflare priority)
+- **Daily Operations**: Morning briefings, strategy sessions, performance reviews, consensus decisions
+- **Specialized Roles**: Each AI model has specific job function (Portfolio Manager, Quant, Creative Strategist, etc.)
+- **Q-Learning Performance Reviews**: System promotes/demotes models based on performance like real staff
 
 ### 3. Recursive Learning System (`core/strategy_learning_system.py`)
 - **Strategy Diversification**: 8 strategy types (momentum, mean reversion, etc.)
@@ -100,6 +103,7 @@ bit-trade/
 # Test AI model integration
 python test_cloudflare_integration.py
 python test_q_learning_integration.py
+python test_openrouter_integration.py  # New: Test 23-model system
 
 # Collect comprehensive training data
 python core/enhanced_data_collector.py
@@ -136,28 +140,55 @@ create table "trading-strategies" (
 );
 ```
 
-## Key Features
+## AI Quant Fund Team Structure (Renaissance Technologies Model)
 
-### Multi-LLM AI Models
-**Groq Models (Free Tier)**:
-- `llama-3.3-70b-versatile`: Balanced & reliable baseline
-- `deepseek-r1-distill-llama-70b`: Analytical & mathematical reasoning
-- `meta-llama/llama-4-maverick-17b`: Creative & unconventional approaches
-- `llama/llama-4-scout-17b`: Pattern exploration & discovery
-- `qwen/qwen3-32b`: Alternative perspectives & diverse thinking
+### 🎯 Core Team (Groq Division - Priority 1) - Fast & Reliable Operations
+- **👤 Versatile (Portfolio Manager)**: `llama-3.3-70b-versatile` - General strategy oversight, balanced approach
+- **📊 Analytical (Senior Quant)**: `deepseek-r1-distill-llama-70b` - Mathematical analysis, risk-adjusted returns  
+- **🎲 Maverick (Creative Strategist)**: `meta-llama/llama-4-maverick-17b` - Unconventional approaches, high-risk/reward
+- **🔍 Scout (Market Explorer)**: `llama/llama-4-scout-17b` - Pattern exploration & discovery
+- **🌟 Diverse (Perspectives Analyst)**: `qwen/qwen3-32b` - Alternative perspectives & diverse thinking
 
-**Cloudflare Workers AI Models (Free Tier - 10,000 Neurons/day)**:
-- `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b`: Advanced reasoning and analysis
-- `@cf/qwen/qwen2.5-coder-32b-instruct`: Code-specialized strategy implementation
-- `@cf/qwen/qwq-32b`: Question-answering and problem-solving focused
+### 🚀 Specialist Department (OpenRouter Division - Priority 2) - Maximum Diversity
+**Leadership Team:**
+- **🎯 Horizon (Chief Analyst)**: 256K context, comprehensive market analysis
+- **🤖 GLM Agent (AI Operations)**: Agent-optimized, efficient decision-making
+- **🚀 Kimi K2 (Innovation Director)**: 1T parameters (32B active), complex reasoning
+- **🧮 DeepSeek R1 (Senior Math)**: Advanced reasoning, risk analysis
 
-### Q-Learning Process
-1. **Market Analysis**: Calculate volatility, trend, and performance metrics
-2. **State Discretization**: Map market conditions to discrete states
-3. **Model Selection**: Q-learning agent chooses optimal AI model
-4. **Strategy Generation**: Selected model creates trading strategy
-5. **Performance Feedback**: Results update Q-learning rewards
-6. **Policy Improvement**: Agent learns better model selection over time
+**Technical Team:**
+- **💻 Qwen Coder (Tech Lead)**: Code generation, algorithm implementation
+- **🎭 Chimera (Creative Director)**: Novel strategy generation, hybrid approaches
+- **🌍 Sarvam (Global Markets)**: Multilingual analysis, international perspective
+- **🎨 Venice (Contrarian)**: Uncensored analysis, unconventional strategies
+
+**Efficiency Specialists:**
+- **⚡ Gemma 3n Team**: Ultra-efficient processing, fast decisions
+- **🔧 Mistral Optimizers**: Instruction-following, strategy execution
+- **🧠 Hunyuan Reasoner**: Chain-of-thought, logical analysis
+
+### 🎓 Senior Advisory Board (Cloudflare Division - Priority 3) - Specialized Validation
+- **🧠 Dr. Reasoning**: `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` - Risk Director, strategic validation
+- **💻 Sr. Developer**: `@cf/qwen/qwen2.5-coder-32b-instruct` - Code Architect, technical oversight
+- **❓ Chief Questioner**: `@cf/qwen/qwq-32b` - Strategy Validator, quality assurance
+
+### Team Collaboration Process (Renaissance Technologies Workflow)
+1. **Morning Briefing**: All 23+ AI staff members analyze overnight market movements
+2. **Research Phase**: Data collection feeds market intelligence to all departments
+3. **Strategy Sessions**: Cross-departmental brainstorming using ensemble consensus
+4. **Collaborative Analysis**: Core Team, Specialists, and Advisory Board work together
+5. **Quality Assurance**: Senior Advisory validates all strategies before deployment  
+6. **Performance Reviews**: Q-learning system promotes/demotes staff based on results
+7. **Consensus Decision**: Final strategy combines perspectives from multiple departments
+
+### Enhanced Q-Learning with Team Management
+1. **Market Regime Analysis**: Calculate volatility, trend, and performance metrics
+2. **Team Assignment**: Match market conditions to optimal department mix
+3. **Ensemble Selection**: Choose 5-7 AI staff members for collaborative session
+4. **Multi-Model Generation**: Each team member contributes strategy perspective
+5. **Consensus Building**: Combine insights for final strategy recommendation
+6. **Performance Tracking**: Update individual and team performance metrics
+7. **Staff Optimization**: Promote high-performers, retrain underperformers
 
 ### Recursive Learning Process
 1. **Analyze**: Review successful strategies in database
@@ -176,33 +207,39 @@ create table "trading-strategies" (
 - **Stop Loss**: Trailing, volatility-based, time-based exits
 - **Risk Metrics**: Sharpe, Sortino, Calmar ratios, drawdown analysis
 
-## Performance Expectations
+## Performance Expectations (Renaissance Technologies Model)
 
-- **Volume**: 50+ strategies per day vs. 1-2 with legacy system
-- **Model Diversity**: 8 AI models (5 Groq + 3 Cloudflare) for varied approaches
-- **Strategy Diversity**: 8 strategy types across multiple assets/timeframes
-- **Quality**: Q-learning improves model selection; recursive learning improves strategy quality
-- **Robustness**: Strategies tested across multiple market scenarios
-- **Reliability**: Cross-provider redundancy ensures continuous operation
+- **Daily Operations**: 100+ collaborative strategies per day vs. 1-2 with legacy system
+- **Team Diversity**: 23+ AI "staff members" across 3 departments providing maximum perspective variety
+- **Collaborative Intelligence**: Ensemble consensus combining 5-7 models per strategy decision
+- **Quality Assurance**: Multi-departmental validation before deployment (Core → Specialists → Advisory)
+- **Adaptive Management**: Q-learning "HR system" promotes/demotes staff based on performance
+- **Operational Reliability**: Department hierarchy (Groq → OpenRouter → Cloudflare) ensures 24/7 operation
+- **Specialized Excellence**: Each AI staff member optimized for specific role (Portfolio Manager, Quant, etc.)
+- **Continuous Learning**: Daily performance reviews and team optimization like real quant fund
 
 ## Development Notes
 
-- **Autonomous Operation**: System designed for continuous autonomous operation
-- **Multi-Provider Architecture**: Groq + Cloudflare for redundancy and cost optimization
-- **Q-Learning Integration**: Intelligent model selection based on market conditions
-- **Enhanced Modules**: Replace legacy functionality while maintaining compatibility
-- **Comprehensive Logging**: All events logged to `logs/` directory for debugging
-- **Output Management**: All outputs saved to `outputs/` directory for analysis
-- **Error Handling**: Robust fallback mechanisms across providers and models
-- **Rate Limiting**: Implemented for both Groq and Cloudflare API calls
+- **Quant Fund Operations**: System operates like Renaissance Technologies with 23+ AI "employees"
+- **Departmental Structure**: Core Team (Groq) → Specialists (OpenRouter) → Advisory (Cloudflare)
+- **Collaborative Intelligence**: Multi-model ensemble consensus, not just sequential fallback
+- **Performance Management**: Q-learning acts as "HR system" promoting/demoting based on results
+- **Daily Operations**: Morning briefings, strategy sessions, performance reviews, consensus decisions
+- **Staff Specialization**: Each AI model has specific role (Portfolio Manager, Quant, Creative Director, etc.)
+- **Quality Assurance**: Multi-departmental validation process before strategy deployment
+- **Continuous Learning**: Team optimization and adaptive role assignment based on market conditions
+- **Autonomous Management**: Self-managing organization with minimal human oversight required
 
-## Recent Major Updates (v2.2)
+## Recent Major Updates (v2.3) - Renaissance Technologies Model
 
-1. **Cloudflare Workers AI Integration** - Added 3 additional AI models
-2. **Q-Learning Model Selection** - Intelligent, adaptive model choice
-3. **Cross-Provider Redundancy** - Automatic fallback between Groq and Cloudflare
-4. **Enhanced Performance Tracking** - Per-model and per-provider analytics
-5. **Comprehensive Testing Suite** - Integration tests for all components
+1. **OpenRouter AI Integration** - Added 15+ free AI models for maximum diversity
+2. **Renaissance Tech Team Structure** - 23+ AI "staff members" with specific roles
+3. **Ensemble Collaboration System** - Multi-model consensus, not just fallback
+4. **Departmental Hierarchy** - Core Team → Specialists → Advisory (Groq → OpenRouter → Cloudflare)
+5. **AI Performance Management** - Q-learning "HR system" with promotions/demotions
+6. **Collaborative Decision Making** - Daily strategy sessions with cross-departmental teams
+7. **Staff Specialization** - Portfolio Managers, Quants, Creative Directors, Risk Directors, etc.
+8. **Comprehensive Testing** - Full 23-model integration validation suite
 
 ## Next Development Steps
 

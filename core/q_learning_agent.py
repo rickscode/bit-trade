@@ -25,8 +25,20 @@ class QLearningAgent:
         self.experience_buffer = []
         self.max_buffer_size = 10000
         
-        # State and action spaces (including Cloudflare models)
-        self.actions = ["versatile", "analytical", "maverick", "diverse", "reasoning", "coder", "questioner"]
+        # State and action spaces (expanded to 23 models: Groq + Cloudflare + OpenRouter)
+        self.actions = [
+            # Groq models (5)
+            "versatile", "analytical", "maverick", "scout", "diverse",
+            # Cloudflare models (3) 
+            "reasoning", "coder", "questioner",
+            # OpenRouter Tier 1: High-performance (4)
+            "horizon", "glm_air", "kimi_k2", "kimi_dev",
+            # OpenRouter Tier 2: Specialized (7)
+            "qwen_coder", "deepseek_r1", "deepseek_0528", "deepseek_qwen", 
+            "chimera", "mistral_small", "mistral_devstral",
+            # OpenRouter Tier 3: Efficient/Diverse (4)
+            "qwen_qwq", "gemma3_4b", "sarvam_m", "hunyuan"
+        ]
         self.states = self._initialize_states()
         
         # Performance tracking
