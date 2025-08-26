@@ -177,7 +177,7 @@ class MultiLLMManager:
         # Simplified system - Groq only
         self.cloudflare_client = None
         self.openrouter_client = None
-        logger.info("🚀 Simplified Groq-only system initialized")
+        logger.info("Simplified Groq-only system initialized")
         
         self.available_models = self._test_model_availability()
         
@@ -206,7 +206,7 @@ class MultiLLMManager:
                 "strengths": ["creative_strategies", "novel_approaches", "fast_inference"]
             },
             "scout": {
-                "name": "openai/gpt-oss-20b",
+                "name": "llama3-groq-70b-8192-tool-use-preview",
                 "provider": "groq",
                 "description": "Exploration & discovery focused",
                 "strengths": ["pattern_discovery", "exploration", "new_insights"]
@@ -277,7 +277,7 @@ class MultiLLMManager:
             "versatile": "llama-3.3-70b-versatile",
             "analytical": "deepseek-r1-distill-llama-70b",
             "maverick": "meta-llama/llama-4-maverick-17b-128e-instruct",
-            "scout": "openai/gpt-oss-20b",
+            "scout": "llama/llama-4-scout-17b-16e-instruct",
             "diverse": "qwen/qwen3-32b"
         }
         
