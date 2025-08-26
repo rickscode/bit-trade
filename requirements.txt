@@ -9,3 +9,7 @@ plotly
 requests
 groq
 supabase
+# Additional dependencies for demo trading
+websockets
+ccxt
+gymnasium[classic_control]

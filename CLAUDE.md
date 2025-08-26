@@ -4,11 +4,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## System Overview
 
-**Bit-Trade v2.3** - An autonomous crypto trading agent with:
-- **23+ AI Models**: 5 Groq + 3 Cloudflare + 15+ OpenRouter free models
-- **Q-Learning**: Intelligent model selection based on market conditions
-- **Reinforcement Learning**: Continuous strategy optimization
-- **Multi-Provider Architecture**: Groq + Cloudflare + OpenRouter for maximum redundancy and diversity
+**Bit-Trade v3.0 LIVE SIMULATION** - An autonomous crypto trading agent with:
+- **5 Groq Models**: Clean AI ensemble (versatile, analytical, maverick, scout, diverse)
+- **AlphaZero-Style RL**: Monte Carlo Tree Search with LLM policy/value networks  
+- **Live Demo Trading**: Real-time Binance Testnet integration with live market data
+- **Clean Architecture**: Focused on live RL training (no legacy backtesting)
+
+## SYSTEM STATUS: FULLY OPERATIONAL
+- **All 5 Groq Models**: Working and tested
+- **Live Market Data**: Real-time BTCUSDT prices  
+- **Trading Execution**: BUY/SELL orders on Binance testnet
+- **AlphaZero Agent**: MCTS + LLM ensemble working
+- **Clean Code**: No linting warnings, professional quality
 
 ## Quick Start
 
@@ -16,52 +23,48 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # Activate virtual environment
 source venv/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Test system components (RECOMMENDED FIRST)
+python main_simplified.py --mode test
 
-# Run the complete enhanced system
-python main.py --mode full --cycles 3 --strategies 5
+# Run live demo trading with AlphaZero agent
+python main_simplified.py --mode demo --episodes 5 --balance 10000
 
-# Or run individual phases
-python main.py --mode collect    # Data collection only
-python main.py --mode learn      # Learning system only
-python main.py --mode backtest   # Backtesting only
+# Extended RL training session  
+python main_simplified.py --mode train --episodes 10 --mcts_sims 25
+
+# Custom configuration
+python main_simplified.py --mode demo --episodes 3 --balance 50000 --mcts_sims 50
 ```
 
-## Environment Setup
+## Environment Setup - COMPLETE
 
-Required environment variables in `.env`:
-- `GROQ_API_KEY`: For 5 Groq LLM models
-- `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_AUTH_TOKEN`: For 3 Cloudflare AI models (optional)
-- `OPENROUTER_API_KEY`: For 15+ OpenRouter free models (optional but recommended)
-- `SUPABASE_URL` and `SUPABASE_KEY`: For database operations
-- `BINANCE_API_KEY` and `BINANCE_API_SECRET`: For market data fetching
-- `USE_Q_LEARNING=true`: Enable intelligent model selection (optional)
+Environment variables in `.env` (CONFIGURED):
+- GROQ_API_KEY: 5 Groq LLM models working
+- BINANCE_API_KEY and BINANCE_API_SECRET: Testnet trading active  
+- SUPABASE_URL and SUPABASE_KEY: Strategy storage ready
+- USE_Q_LEARNING=true: Model selection optimization enabled
 
-## Repository Structure
+## Repository Structure (CLEANED)
 
 ```
 bit-trade/
-├── main.py                     # Main entry point for enhanced system
-├── core/                       # Enhanced core modules
-│   ├── multi_llm_manager.py           # 23+ model AI orchestration with Q-learning
-│   ├── cloudflare_ai_client.py        # Cloudflare Workers AI integration  
-│   ├── openrouter_ai_client.py        # OpenRouter AI integration (15+ free models)
-│   ├── q_learning_agent.py            # Q-learning model selector (expanded)
-│   ├── strategy_learning_system.py    # Recursive learning system
-│   ├── enhanced_data_collector.py     # Multi-asset data collection
-│   ├── enhanced_backtest_system.py    # Comprehensive backtesting
-│   └── enhanced_logger.py             # Comprehensive logging system
-├── legacy/                     # Legacy modules (for reference)
-│   ├── data_fetch.py          # Basic data fetching
-│   ├── backtest_strategy.py   # Basic backtesting
-│   ├── evaluate_strategy.py   # Basic evaluation
-│   └── save_to_supabase.py    # Basic database save
-├── data/                       # Raw market data (CSV)
-├── strategies/                 # Generated trading strategies
-├── outputs/                    # System outputs and reports
+├── main_simplified.py         # Main entry point for live RL trading
+├── core/                      # Core live simulation modules
+│   ├── multi_llm_manager.py           # 5 Groq models with Q-learning
+│   ├── alphazero_trading_agent.py     # MCTS + LLM trading agent
+│   ├── binance_demo_env.py            # Live Binance testnet environment
+│   ├── q_learning_agent.py            # Q-learning model optimization
+│   └── enhanced_logger.py             # Professional logging system
+├── logs/                      # System logs
+│   ├── bit_trade.log                  # Main application logs
+│   ├── errors.log                     # Error tracking
+│   └── performance.log                # Performance metrics
+├── outputs/                    # Training results and reports
 ├── venv/                      # Virtual environment
-├── requirements.txt           # Python dependencies
+├── requirements.txt           # Python dependencies (gymnasium, groq, binance)
+├── .env                       # API keys (configured)
+├── CLAUDE.md                  # This documentation
+├── CONFLUENCE_DOCUMENTATION.md # Additional documentation
 └── README.md                  # Project documentation
 ```
 

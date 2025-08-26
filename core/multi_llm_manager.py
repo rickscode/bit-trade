@@ -9,13 +9,9 @@ from dotenv import load_dotenv
 try:
     from .enhanced_logger import logger
     from .q_learning_agent import QLearningModelSelector
-    from .cloudflare_ai_client import CloudflareAIClient
-    from .openrouter_ai_client import OpenRouterAIClient
 except ImportError:
     from enhanced_logger import logger
     from q_learning_agent import QLearningModelSelector
-    from cloudflare_ai_client import CloudflareAIClient
-    from openrouter_ai_client import OpenRouterAIClient
 
 load_dotenv()
 
@@ -48,36 +44,12 @@ class ModelPerformanceTracker:
         }
         
         return {
-            # Groq models
+            # Groq models only - simplified system
             "versatile": default_stats.copy(),
             "analytical": default_stats.copy(),
             "maverick": default_stats.copy(),
             "scout": default_stats.copy(),
-            "diverse": default_stats.copy(),
-            # Cloudflare models
-            "reasoning": default_stats.copy(),
-            "coder": default_stats.copy(),
-            "questioner": default_stats.copy(),
-            # OpenRouter models
-            "horizon": default_stats.copy(),
-            "glm_air": default_stats.copy(),
-            "qwen_coder": default_stats.copy(),
-            "kimi_k2": default_stats.copy(),
-            "deepseek_r1": default_stats.copy(),
-            "qwen_qwq": default_stats.copy(),
-            "gemma3": default_stats.copy(),
-            # Additional OpenRouter models
-            "kimi_dev": default_stats.copy(),
-            "deepseek_0528": default_stats.copy(),
-            "deepseek_qwen": default_stats.copy(),
-            "chimera": default_stats.copy(),
-            "gemma3_4b": default_stats.copy(),
-            "gemma3_2b": default_stats.copy(),
-            "mistral_small": default_stats.copy(),
-            "mistral_devstral": default_stats.copy(),
-            "sarvam_m": default_stats.copy(),
-            "venice_uncensored": default_stats.copy(),
-            "hunyuan": default_stats.copy()
+            "diverse": default_stats.copy()
         }
     
     def update_performance(self, model_key: str, strategy_metrics: Dict, is_successful: bool = False):
@@ -202,21 +174,10 @@ class MultiLLMManager:
         self.groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
         self.performance_tracker = ModelPerformanceTracker()
         
-        # Initialize Cloudflare AI client
-        try:
-            self.cloudflare_client = CloudflareAIClient()
-            logger.info("✅ Cloudflare AI client initialized")
-        except Exception as e:
-            self.cloudflare_client = None
-            logger.warning(f"⚠️ Cloudflare AI client not available: {e}")
-        
-        # Initialize OpenRouter AI client
-        try:
-            self.openrouter_client = OpenRouterAIClient()
-            logger.info("✅ OpenRouter AI client initialized")
-        except Exception as e:
-            self.openrouter_client = None
-            logger.warning(f"⚠️ OpenRouter AI client not available: {e}")
+        # Simplified system - Groq only
+        self.cloudflare_client = None
+        self.openrouter_client = None
+        logger.info("🚀 Simplified Groq-only system initialized")
         
         self.available_models = self._test_model_availability()
         
@@ -245,7 +206,7 @@ class MultiLLMManager:
                 "strengths": ["creative_strategies", "novel_approaches", "fast_inference"]
             },
             "scout": {
-                "name": "llama/llama-4-scout-17b-16e-instruct",
+                "name": "openai/gpt-oss-20b",
                 "provider": "groq",
                 "description": "Exploration & discovery focused",
                 "strengths": ["pattern_discovery", "exploration", "new_insights"]
@@ -255,217 +216,47 @@ class MultiLLMManager:
                 "provider": "groq",
                 "description": "Different architectural approach",
                 "strengths": ["diverse_perspectives", "alternative_thinking", "unique_insights"]
-            },
-            # Cloudflare Workers AI Models
-            "reasoning": {
-                "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-                "provider": "cloudflare",
-                "description": "Advanced reasoning and analysis model",
-                "strengths": ["logical_reasoning", "complex_analysis", "pattern_recognition"]
-            },
-            "coder": {
-                "name": "@cf/qwen/qwen2.5-coder-32b-instruct",
-                "provider": "cloudflare", 
-                "description": "Code-specialized model for strategy implementation",
-                "strengths": ["code_generation", "algorithm_design", "technical_precision"]
-            },
-            "questioner": {
-                "name": "@cf/qwen/qwq-32b",
-                "provider": "cloudflare",
-                "description": "Question-answering and problem-solving model",
-                "strengths": ["problem_solving", "market_analysis", "strategic_thinking"]
-            },
-            # OpenRouter Models
-            "horizon": {
-                "name": "openrouter/horizon-beta",
-                "provider": "openrouter",
-                "description": "Improved version of Horizon Alpha, general purpose",
-                "strengths": ["general_purpose", "large_context", "versatile"]
-            },
-            "glm_air": {
-                "name": "z-ai/glm-4.5-air",
-                "provider": "openrouter",
-                "description": "Lightweight variant optimized for agent-centric applications",
-                "strengths": ["agent_tasks", "efficiency", "reasoning"]
-            },
-            "qwen_coder": {
-                "name": "qwen/qwen3-coder",
-                "provider": "openrouter",
-                "description": "Code generation specialist optimized for agentic coding tasks",
-                "strengths": ["code_generation", "algorithm_design", "technical_implementation"]
-            },
-            "kimi_k2": {
-                "name": "moonshot/kimi-k2",
-                "provider": "openrouter",
-                "description": "Large-scale MoE model with 1T total params, 32B active",
-                "strengths": ["complex_reasoning", "performance", "efficiency"]
-            },
-            "deepseek_r1": {
-                "name": "deepseek/deepseek-r1:free",
-                "provider": "openrouter",
-                "description": "Advanced reasoning model from DeepSeek",
-                "strengths": ["reasoning", "analysis", "problem_solving"]
-            },
-            "qwen_qwq": {
-                "name": "qwen/qwq-32b:free",
-                "provider": "openrouter",
-                "description": "Question-answering specialist from Qwen family",
-                "strengths": ["question_answering", "problem_solving", "analysis"]
-            },
-            "gemma3": {
-                "name": "google/gemma-3-27b-it:free",
-                "provider": "openrouter",
-                "description": "Google's Gemma 3 instruction-tuned model",
-                "strengths": ["instruction_following", "versatility", "reliability"]
-            },
-            # Additional OpenRouter Models (Tier 2)
-            "kimi_dev": {
-                "name": "moonshot/kimi-dev-72b:free",
-                "provider": "openrouter",
-                "description": "Open-source large language model fine-tuned for software engineering",
-                "strengths": ["software_engineering", "problem_solving", "code_optimization"]
-            },
-            "deepseek_0528": {
-                "name": "deepseek/deepseek-r1-0528:free",
-                "provider": "openrouter",
-                "description": "Updated DeepSeek R1 with improved performance",
-                "strengths": ["advanced_reasoning", "mathematical_analysis", "pattern_recognition"]
-            },
-            "deepseek_qwen": {
-                "name": "deepseek/deepseek-r1-0528-qwen3-8b:free",
-                "provider": "openrouter",
-                "description": "DeepSeek R1 optimized with Qwen3 architecture",
-                "strengths": ["hybrid_reasoning", "efficiency", "multilingual"]
-            },
-            "chimera": {
-                "name": "tng/deepseek-r1t2-chimera:free",
-                "provider": "openrouter",
-                "description": "Second-generation Chimera model from TNG Tech",
-                "strengths": ["text_generation", "creative_strategies", "hybrid_approaches"]
-            },
-            "gemma3_4b": {
-                "name": "google/gemma-3n-4b:free",
-                "provider": "openrouter",
-                "description": "Google's efficient Gemma 3 model optimized for mobile devices",
-                "strengths": ["efficiency", "multimodal", "mobile_optimization"]
-            },
-            "gemma3_2b": {
-                "name": "google/gemma-3n-2b:free",
-                "provider": "openrouter",
-                "description": "Ultra-efficient Gemma 3 model for low-resource devices",
-                "strengths": ["ultra_efficiency", "speed", "low_resource"]
-            },
-            "mistral_small": {
-                "name": "mistral/mistral-small-3.2-24b:free",
-                "provider": "openrouter",
-                "description": "Updated 24B parameter model optimized for instruction following",
-                "strengths": ["instruction_following", "function_calling", "optimization"]
-            },
-            "mistral_devstral": {
-                "name": "mistral/devstral-small-2505:free",
-                "provider": "openrouter",
-                "description": "Agentic LLM fine-tuned for advanced software engineering tasks",
-                "strengths": ["software_engineering", "agent_tasks", "tool_usage"]
-            },
-            "sarvam_m": {
-                "name": "sarvam/sarvam-m:free",
-                "provider": "openrouter",
-                "description": "24B-parameter instruction-tuned model for multiple languages",
-                "strengths": ["multilingual", "instruction_tuned", "diverse_perspectives"]
-            },
-            "venice_uncensored": {
-                "name": "venice/uncensored:free",
-                "provider": "openrouter",
-                "description": "Fine-tuned variant of Mistral-Small designed for unrestricted analysis",
-                "strengths": ["uncensored_analysis", "creative_freedom", "diverse_thinking"]
-            },
-            "hunyuan": {
-                "name": "tencent/hunyuan-a13b-instruct:free",
-                "provider": "openrouter",
-                "description": "13B active parameter MoE model with Chain-of-Thought reasoning",
-                "strengths": ["chain_of_thought", "reasoning", "efficiency"]
             }
         }
         
-        # Task-specific model assignments (expanded to 23 models)
+        # Task-specific model assignments (Groq-only - 5 models)
         self.task_models = {
             "strategy_generation": [
-                # Core models
-                "versatile", "analytical", "maverick", "scout", "diverse", 
-                # Cloudflare models
-                "reasoning", "coder", "questioner",
-                # High-performance OpenRouter
-                "horizon", "glm_air", "kimi_k2", "kimi_dev", 
-                # Specialized OpenRouter
-                "deepseek_r1", "deepseek_0528", "chimera", "mistral_small"
+                "versatile", "analytical", "maverick", "scout", "diverse"
             ],
             "evaluation": [
-                "analytical", "versatile", "reasoning", "deepseek_r1", "deepseek_0528", 
-                "hunyuan", "mistral_small", "glm_air"
+                "analytical", "versatile", "scout"
             ],
             "learning_analysis": [
-                "analytical", "scout", "reasoning", "questioner", "deepseek_0528", 
-                "hunyuan", "chimera", "glm_air"
+                "analytical", "scout", "diverse"
             ],
             "risk_assessment": [
-                "analytical", "versatile", "reasoning", "deepseek_r1", "deepseek_0528",
-                "mistral_small", "hunyuan"
+                "analytical", "versatile"
             ],
             "pattern_recognition": [
-                "analytical", "scout", "diverse", "reasoning", "questioner", 
-                "deepseek_0528", "chimera", "kimi_k2", "venice_uncensored"
+                "analytical", "scout", "diverse"
             ],
             "code_generation": [
-                "coder", "qwen_coder", "kimi_dev", "mistral_devstral", 
-                "analytical", "reasoning", "deepseek_0528"
+                "analytical", "versatile"
             ],
             "problem_solving": [
-                "questioner", "reasoning", "analytical", "qwen_qwq", "hunyuan",
-                "deepseek_r1", "glm_air", "mistral_small"
+                "analytical", "versatile", "scout"
             ],
             "creative_analysis": [
-                "maverick", "chimera", "venice_uncensored", "scout", "diverse",
-                "horizon", "sarvam_m"
-            ],
-            "multilingual_analysis": [
-                "sarvam_m", "deepseek_qwen", "diverse", "gemma3", "qwen_qwq"
+                "maverick", "scout", "diverse"
             ],
             "fast_processing": [
-                "gemma3_2b", "gemma3_4b", "scout", "maverick", "diverse"
+                "scout", "maverick", "diverse"
             ]
         }
         
-        # Model parameters
+        # Model parameters (Groq-only)
         self.model_params = {
-            # Groq model parameters
             "versatile": {"temperature": 0.7, "max_tokens": 2048},
             "analytical": {"temperature": 0.5, "max_tokens": 2048},
             "maverick": {"temperature": 0.8, "max_tokens": 1536},
             "scout": {"temperature": 0.6, "max_tokens": 1536},
-            "diverse": {"temperature": 0.7, "max_tokens": 1536},
-            # Cloudflare model parameters
-            "reasoning": {"temperature": 0.5, "max_tokens": 2048},
-            "coder": {"temperature": 0.3, "max_tokens": 2048},
-            "questioner": {"temperature": 0.6, "max_tokens": 1536},
-            # OpenRouter model parameters
-            "horizon": {"temperature": 0.7, "max_tokens": 2048},
-            "glm_air": {"temperature": 0.6, "max_tokens": 1536},
-            "kimi_k2": {"temperature": 0.5, "max_tokens": 1536},
-            "kimi_dev": {"temperature": 0.4, "max_tokens": 2048},
-            "qwen_coder": {"temperature": 0.3, "max_tokens": 2048},
-            "deepseek_r1": {"temperature": 0.5, "max_tokens": 2048},
-            "deepseek_0528": {"temperature": 0.5, "max_tokens": 2048},
-            "deepseek_qwen": {"temperature": 0.6, "max_tokens": 1536},
-            "chimera": {"temperature": 0.8, "max_tokens": 1536},
-            "qwen_qwq": {"temperature": 0.6, "max_tokens": 1536},
-            "gemma3": {"temperature": 0.7, "max_tokens": 1536},
-            "gemma3_4b": {"temperature": 0.7, "max_tokens": 1024},
-            "gemma3_2b": {"temperature": 0.7, "max_tokens": 1024},
-            "mistral_small": {"temperature": 0.6, "max_tokens": 2048},
-            "mistral_devstral": {"temperature": 0.4, "max_tokens": 2048},
-            "sarvam_m": {"temperature": 0.7, "max_tokens": 1536},
-            "venice_uncensored": {"temperature": 0.8, "max_tokens": 1536},
-            "hunyuan": {"temperature": 0.5, "max_tokens": 1536}
+            "diverse": {"temperature": 0.7, "max_tokens": 1536}
         }
         
         # Selection mode
@@ -486,7 +277,7 @@ class MultiLLMManager:
             "versatile": "llama-3.3-70b-versatile",
             "analytical": "deepseek-r1-distill-llama-70b",
             "maverick": "meta-llama/llama-4-maverick-17b-128e-instruct",
-            "scout": "llama/llama-4-scout-17b-16e-instruct",
+            "scout": "openai/gpt-oss-20b",
             "diverse": "qwen/qwen3-32b"
         }
         
@@ -505,19 +296,8 @@ class MultiLLMManager:
                 available[model_key] = False
                 print(f"❌ Groq model {model_key} ({model_name}) is not available: {str(e)[:100]}...")
         
-        # Test Cloudflare models
-        if self.cloudflare_client:
-            cloudflare_available = self.cloudflare_client.available_models
-            for model_key, is_available in cloudflare_available.items():
-                available[model_key] = is_available
-                status = "✅" if is_available else "❌"
-                model_name = self.cloudflare_client.models[model_key]["name"]
-                print(f"{status} Cloudflare model {model_key} ({model_name}) {'is' if is_available else 'is not'} available")
-        else:
-            # Mark all Cloudflare models as unavailable
-            for model_key in ["reasoning", "coder", "questioner"]:
-                available[model_key] = False
-                print(f"❌ Cloudflare model {model_key} is not available (client not initialized)")
+        # Simplified system - Groq only
+        print(f"🚀 Simplified system: Using {len(available)} Groq models only")
         
         return available
     
@@ -602,15 +382,11 @@ class MultiLLMManager:
         params = self.model_params[model_key].copy()
         params.update(kwargs)
         
-        # Route to appropriate provider
+        # Simplified routing - Groq only
         if provider == "groq":
             return self._generate_with_groq(prompt, model_key, model_name, params)
-        elif provider == "cloudflare":
-            return self._generate_with_cloudflare(prompt, model_key, model_name, params)
-        elif provider == "openrouter":
-            return self._generate_with_openrouter(prompt, model_key, model_name, params)
         else:
-            raise Exception(f"Unknown provider: {provider}")
+            raise Exception(f"Unsupported provider: {provider}. Only Groq models are supported in simplified mode.")
     
     def _generate_with_groq(self, prompt: str, model_key: str, model_name: str, params: Dict) -> Tuple[str, Dict]:
         """Generate content using Groq API"""
@@ -646,32 +422,13 @@ class MultiLLMManager:
                 else:
                     raise e
     
-    def _generate_with_cloudflare(self, prompt: str, model_key: str, model_name: str, params: Dict) -> Tuple[str, Dict]:
-        """Generate content using Cloudflare Workers AI"""
-        if not self.cloudflare_client:
-            raise Exception("Cloudflare client not available")
-        
-        return self.cloudflare_client.generate_with_model(prompt, model_key, **params)
-    
-    def _generate_with_openrouter(self, prompt: str, model_key: str, model_name: str, params: Dict) -> Tuple[str, Dict]:
-        """Generate content using OpenRouter AI"""
-        if not self.openrouter_client:
-            raise Exception("OpenRouter client not available")
-        
-        return self.openrouter_client.generate_with_model(model_key, prompt, **params)
+    # Removed Cloudflare and OpenRouter methods - Groq only system
     
     def _find_fallback_model(self, preferred_model: str = None) -> str:
-        """Find the best available fallback model"""
-        # Priority order for fallbacks (Groq -> OpenRouter -> Cloudflare)
+        """Find the best available fallback model (Groq only)"""
+        # Priority order for fallbacks (Groq models only)
         fallback_priority = [
-            # Groq models (fastest, most reliable)
-            "versatile", "analytical", "maverick", "diverse", "scout",  
-            # OpenRouter models (highest diversity - 15+ models)
-            "horizon", "glm_air", "kimi_k2", "deepseek_r1", "deepseek_0528",
-            "mistral_small", "hunyuan", "qwen_coder", "kimi_dev", "chimera",
-            "deepseek_qwen", "sarvam_m", "venice_uncensored", "gemma3_4b",
-            # Cloudflare models (specialized tasks)
-            "reasoning", "coder", "questioner"
+            "versatile", "analytical", "maverick", "scout", "diverse"
         ]
         
         # If preferred model is specified, try it first
@@ -713,36 +470,14 @@ class MultiLLMManager:
     def generate_ensemble_consensus(self, prompt: str, num_models: int = 5, task_type: str = "strategy_generation") -> Dict:
         """Generate collaborative consensus from multiple models working together"""
         
-        # Select diverse models from different providers
+        # Select diverse Groq models for ensemble
         available_models = self.task_models.get(task_type, self.task_models["strategy_generation"])
         
-        # Ensure we get models from different providers for diversity
+        # All models are Groq in simplified system
         groq_models = [m for m in available_models if self.models.get(m, {}).get("provider") == "groq"]
-        openrouter_models = [m for m in available_models if self.models.get(m, {}).get("provider") == "openrouter"]
-        cloudflare_models = [m for m in available_models if self.models.get(m, {}).get("provider") == "cloudflare"]
         
-        # Build diverse ensemble: prioritize Groq -> OpenRouter -> Cloudflare
-        selected_models = []
-        
-        # Add at least 2 Groq models (fast, reliable)
-        selected_models.extend(random.sample(groq_models, min(2, len(groq_models))))
-        
-        # Add OpenRouter models for maximum diversity
-        remaining_slots = num_models - len(selected_models)
-        if remaining_slots > 0 and openrouter_models:
-            openrouter_count = min(remaining_slots - 1, len(openrouter_models), 3)  # Reserve 1 slot for Cloudflare
-            selected_models.extend(random.sample(openrouter_models, openrouter_count))
-        
-        # Add 1 Cloudflare model for specialized analysis
-        remaining_slots = num_models - len(selected_models)
-        if remaining_slots > 0 and cloudflare_models:
-            selected_models.extend(random.sample(cloudflare_models, min(1, len(cloudflare_models))))
-        
-        # Fill remaining slots with any available models
-        remaining_slots = num_models - len(selected_models)
-        if remaining_slots > 0:
-            all_remaining = [m for m in available_models if m not in selected_models]
-            selected_models.extend(random.sample(all_remaining, min(remaining_slots, len(all_remaining))))
+        # Select up to num_models from available Groq models
+        selected_models = random.sample(groq_models, min(num_models, len(groq_models)))
         
         logger.info(f"🤝 Ensemble consensus with {len(selected_models)} models: {', '.join(selected_models)}")
         
