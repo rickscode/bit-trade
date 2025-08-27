@@ -1,0 +1,18 @@
+python-binance
+pandas
+numpy
+TA-Lib
+python-dotenv
+vectorbt
+matplotlib
+plotly
+requests
+groq
+supabase
+# Additional dependencies for demo trading
+websockets
+ccxt
+gymnasium[classic_control]
+# Dashboard dependencies
+streamlit
+plotly

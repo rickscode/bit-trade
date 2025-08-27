@@ -1,0 +1,24 @@
+{
+  "session_id": "demo_20250826_131117_2365cb3f",
+  "start_time": "2025-08-26T13:11:17.094909",
+  "end_time": null,
+  "mode": "demo",
+  "episodes": 2,
+  "completed_episodes": 0,
+  "total_steps": 0,
+  "total_return": 0.0,
+  "win_rate": 0.0,
+  "config": {
+    "episodes": 2,
+    "max_steps": 1000,
+    "symbols": [
+      "BTCUSDT"
+    ],
+    "mcts_sims": 5,
+    "temperature": 1.0,
+    "fast_mode": true,
+    "dashboard": true
+  },
+  "status": "active",
+  "last_checkpoint": null
+}

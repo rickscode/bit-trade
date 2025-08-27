@@ -1,0 +1,77 @@
+{
+  "session": {
+    "session_id": "demo_20250826_140014_bb75aa79",
+    "start_time": "2025-08-26T14:00:14.225525",
+    "end_time": "2025-08-26T14:00:27.479333",
+    "mode": "demo",
+    "episodes": 1,
+    "completed_episodes": 1,
+    "total_steps": 0,
+    "total_return": 0.0,
+    "win_rate": 0.0,
+    "config": {
+      "episodes": 1,
+      "max_steps": 3,
+      "symbols": [
+        "BTCUSDT"
+      ],
+      "mcts_sims": 1,
+      "temperature": 1.0,
+      "fast_mode": false,
+      "dashboard": false
+    },
+    "status": "completed",
+    "last_checkpoint": null
+  },
+  "results": {
+    "session_id": "demo_20250826_140014_bb75aa79",
+    "episode_returns": [
+      0.0
+    ],
+    "avg_return": 0.0,
+    "win_rate": 0.0,
+    "training_stats": {
+      "training_episodes": 1,
+      "avg_return": 0.0,
+      "win_rate": 0.0,
+      "experience_buffer_size": 3,
+      "model_performance": {}
+    },
+    "model_performance": {
+      "timestamp": "2025-08-26T14:00:27.478882",
+      "model_rankings": [
+        {
+          "model": "versatile",
+          "success_rate": 0.0,
+          "avg_return": 0.0,
+          "avg_sharpe": 0.0,
+          "strategies_generated": 0,
+          "best_strategy_return": 0.0
+        },
+        {
+          "model": "analytical",
+          "success_rate": 0.0,
+          "avg_return": 0.0,
+          "avg_sharpe": 0.0,
+          "strategies_generated": 0,
+          "best_strategy_return": 0.0
+        },
+        {
+          "model": "diverse",
+          "success_rate": 0.0,
+          "avg_return": 0.0,
+          "avg_sharpe": 0.0,
+          "strategies_generated": 0,
+          "best_strategy_return": 0.0
+        }
+      ],
+      "overall_stats": {
+        "total_strategies": 0,
+        "total_successful": 0,
+        "overall_success_rate": 0.0
+      }
+    },
+    "completed_episodes": 1,
+    "total_return": 0.0
+  }
+}
