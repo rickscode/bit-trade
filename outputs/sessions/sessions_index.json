@@ -358,5 +358,125 @@
     },
     "status": "active",
     "last_checkpoint": null
+  },
+  "demo_20250827_135504_37b8caec": {
+    "session_id": "demo_20250827_135504_37b8caec",
+    "start_time": "2025-08-27T13:55:04.516488",
+    "end_time": null,
+    "mode": "demo",
+    "episodes": 1,
+    "completed_episodes": 0,
+    "total_steps": 0,
+    "total_return": 0.0,
+    "win_rate": 0.0,
+    "config": {
+      "episodes": 1,
+      "max_steps": 1000,
+      "symbols": [
+        "BTCUSDT"
+      ],
+      "mcts_sims": 5,
+      "temperature": 1.0,
+      "fast_mode": true,
+      "dashboard": false
+    },
+    "status": "active",
+    "last_checkpoint": null
+  },
+  "demo_20250827_135740_16aaca09": {
+    "session_id": "demo_20250827_135740_16aaca09",
+    "start_time": "2025-08-27T13:57:40.994384",
+    "end_time": null,
+    "mode": "demo",
+    "episodes": 15,
+    "completed_episodes": 0,
+    "total_steps": 0,
+    "total_return": 0.0,
+    "win_rate": 0.0,
+    "config": {
+      "episodes": 15,
+      "max_steps": 1000,
+      "symbols": [
+        "BTCUSDT"
+      ],
+      "mcts_sims": 12,
+      "temperature": 1.0,
+      "fast_mode": false,
+      "dashboard": true
+    },
+    "status": "active",
+    "last_checkpoint": null
+  },
+  "demo_20250827_140308_998ac40a": {
+    "session_id": "demo_20250827_140308_998ac40a",
+    "start_time": "2025-08-27T14:03:08.107786",
+    "end_time": null,
+    "mode": "demo",
+    "episodes": 10,
+    "completed_episodes": 0,
+    "total_steps": 0,
+    "total_return": 0.0,
+    "win_rate": 0.0,
+    "config": {
+      "episodes": 10,
+      "max_steps": 1000,
+      "symbols": [
+        "BTCUSDT"
+      ],
+      "mcts_sims": 8,
+      "temperature": 1.0,
+      "fast_mode": false,
+      "dashboard": true
+    },
+    "status": "active",
+    "last_checkpoint": null
+  },
+  "demo_20250827_140733_a4886606": {
+    "session_id": "demo_20250827_140733_a4886606",
+    "start_time": "2025-08-27T14:07:33.104059",
+    "end_time": null,
+    "mode": "demo",
+    "episodes": 2,
+    "completed_episodes": 0,
+    "total_steps": 0,
+    "total_return": 0.0,
+    "win_rate": 0.0,
+    "config": {
+      "episodes": 2,
+      "max_steps": 1000,
+      "symbols": [
+        "BTCUSDT"
+      ],
+      "mcts_sims": 5,
+      "temperature": 1.0,
+      "fast_mode": true,
+      "dashboard": false
+    },
+    "status": "active",
+    "last_checkpoint": null
+  },
+  "demo_20250827_141057_e37a4e21": {
+    "session_id": "demo_20250827_141057_e37a4e21",
+    "start_time": "2025-08-27T14:10:57.349435",
+    "end_time": null,
+    "mode": "demo",
+    "episodes": 3,
+    "completed_episodes": 0,
+    "total_steps": 0,
+    "total_return": 0.0,
+    "win_rate": 0.0,
+    "config": {
+      "episodes": 3,
+      "max_steps": 1000,
+      "symbols": [
+        "BTCUSDT"
+      ],
+      "mcts_sims": 5,
+      "temperature": 1.0,
+      "fast_mode": true,
+      "dashboard": true
+    },
+    "status": "active",
+    "last_checkpoint": null
   }
 }

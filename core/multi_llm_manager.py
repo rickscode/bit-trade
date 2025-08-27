@@ -172,8 +172,8 @@ class MultiLLMManager:
         # Multi-key setup for increased daily limits
         self.groq_api_keys = [
             os.getenv("GROQ_API_KEY"),
-            os.getenv("GROQ_API_KEY_X"), 
-            os.getenv("GROQ_API_KEY_y")
+            os.getenv("GROQ_API_KEY_2"), 
+            os.getenv("GROQ_API_KEY_3")
         ]
         # Remove None keys
         self.groq_api_keys = [key for key in self.groq_api_keys if key]

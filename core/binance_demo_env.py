@@ -300,7 +300,9 @@ class BinanceDemoEnv(gym.Env):
         for symbol, position in self.active_positions.items():
             try:
                 # Check OCO order status
-                oco_status = self.client.get_order_list(orderListId=position['oco_order_id'])
+                # TEMPORARY: Skip OCO status check while using simple limit orders
+                # oco_status = self.client.get_order_list(orderListId=position['oco_order_id'])
+                oco_status = {'listOrderStatus': 'EXECUTING', 'listStatusType': 'EXEC_STARTED'}  # Placeholder status
                 
                 if oco_status['listStatusType'] == 'ALL_DONE':
                     # OCO completed - determine if take profit or stop loss
@@ -402,14 +404,26 @@ class BinanceDemoEnv(gym.Env):
             take_profit_price = avg_fill_price * (1 + self.min_take_profit_percentage)  # 2% take profit minimum
             
             # Place OCO (One-Cancels-Other) order for risk management
+            # TEMPORARY: Using simple limit order while debugging OCO API issue
             try:
-                oco_order = self.client.order_oco_sell(
+                # Place a take profit limit order instead of OCO (temporary)
+                oco_order = self.client.order_limit_sell(
                     symbol=self.current_symbol,
                     quantity=f"{filled_qty:.8f}",
-                    price=f"{take_profit_price:.2f}",  # Take profit limit order
-                    stopPrice=f"{stop_price:.2f}",     # Stop loss trigger price  
-                    stopLimitPrice=f"{stop_price * 0.99:.2f}"  # Stop limit price (1% below stop)
+                    price=f"{take_profit_price:.2f}"  # Take profit price
                 )
+                
+                logger.info(f"⚠️ TEMPORARY: Using limit sell instead of OCO while debugging API issue")
+                
+                # TODO: Fix OCO API integration with proper new API format
+                # OCO order should be:
+                # oco_order = self.client.order_oco_sell(
+                #     symbol=self.current_symbol,
+                #     quantity=f"{filled_qty:.8f}",
+                #     price=f"{take_profit_price:.2f}",  # Take profit limit order
+                #     stopPrice=f"{stop_price:.2f}",     # Stop loss trigger price  
+                #     stopLimitPrice=f"{stop_price * 0.995:.2f}"  # Stop limit price (0.5% below stop)
+                # )
                 
                 # Track active position with OCO details
                 self.active_positions[self.current_symbol] = {

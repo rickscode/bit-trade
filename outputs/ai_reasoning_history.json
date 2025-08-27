@@ -1,2271 +1,5 @@
 [
   {
-    "observation": "[ 2.2042625e+00 -4.1722800e-04 -5.9907569e-04 -2.0298854e-04\n -3.8120669e-04  5.7699799e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 110213.11,
-      "price_change_24h": 0.15730641972861129,
-      "momentum": "-0.0003812067",
-      "volatility": "0.000576998",
-      "portfolio_value": 119896.2693506,
-      "balance": 119896.2693506,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119896.2693506,
-          "portfolio_value": 119896.2693506,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110213.11,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "2",
-    "action_name": "SELL",
-    "timestamp": "2025-08-26T13:18:41.705399",
-    "mcts_stats": {
-      "total_simulations": 7,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 5,
-          "q_value": 0.0,
-          "prior_prob": 0.64
-        },
-        "BUY": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.19
-        },
-        "SELL": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.17
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "SELL",
-      "confidence": 0.7142857142857143,
-      "primary_factors": [],
-      "portfolio_analysis": {
-        "current_value": 119896.2693506,
-        "cash_allocation": 1.0,
-        "total_return": 0.0,
-        "risk_level": "LOW"
-      },
-      "mcts_analysis": {
-        "simulations_run": 7,
-        "alternative_actions": {
-          "HOLD": {
-            "visits": 5,
-            "q_value": 0.0,
-            "prior_prob": 0.64
-          },
-          "BUY": {
-            "visits": 1,
-            "q_value": 0.0,
-            "prior_prob": 0.19
-          },
-          "SELL": {
-            "visits": 1,
-            "q_value": 0.0,
-            "prior_prob": 0.17
-          }
-        },
-        "consensus_strength": "MODERATE"
-      },
-      "market_conditions": {
-        "trend": "neutral",
-        "momentum": "-0.0003812067",
-        "volatility": "0.000576998"
-      }
-    }
-  },
-  {
-    "observation": "[2.2007124e+00 1.0542040e-05 1.7676095e-04 4.7810883e-03 8.6524924e-05\n 2.4308017e-02 1.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00]",
-    "market_context": {
-      "current_price": 110031.61,
-      "price_change_24h": -0.10402538662481359,
-      "momentum": "8.6524924e-05",
-      "volatility": "0.024308017",
-      "portfolio_value": 117498.5929729,
-      "balance": 117498.5929729,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 117498.5929729,
-          "portfolio_value": 117498.5929729,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110031.61,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "2",
-    "action_name": "SELL",
-    "timestamp": "2025-08-26T13:32:21.402871",
-    "mcts_stats": {
-      "total_simulations": 7,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "SELL",
-      "confidence": 0.42857142857142855,
-      "primary_factors": [],
-      "portfolio_analysis": {
-        "current_value": 117498.5929729,
-        "cash_allocation": 1.0,
-        "total_return": 0.0,
-        "risk_level": "LOW"
-      },
-      "mcts_analysis": {
-        "simulations_run": 7,
-        "alternative_actions": {
-          "HOLD": {
-            "visits": 3,
-            "q_value": 0.0,
-            "prior_prob": 0.33
-          },
-          "BUY": {
-            "visits": 1,
-            "q_value": 0.0,
-            "prior_prob": 0.33
-          },
-          "SELL": {
-            "visits": 3,
-            "q_value": 0.0,
-            "prior_prob": 0.34
-          }
-        },
-        "consensus_strength": "WEAK"
-      },
-      "market_conditions": {
-        "trend": "neutral",
-        "momentum": "8.6524924e-05",
-        "volatility": "0.024308017"
-      }
-    }
-  },
-  {
-    "observation": "[2.2017753e+00 3.8131047e-04 5.1425770e-04 5.3589256e-03 2.6322054e-04\n 2.4284992e-02 1.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00]",
-    "market_context": {
-      "current_price": 110088.76,
-      "price_change_24h": -0.05094200029470331,
-      "momentum": "0.00026322054",
-      "volatility": "0.024284992",
-      "portfolio_value": 117498.5929729,
-      "balance": 117498.5929729,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 117498.5929729,
-          "portfolio_value": 117498.5929729,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110088.76,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:34:01.117014",
-    "mcts_stats": {
-      "total_simulations": 10,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 8,
-          "q_value": 0.0,
-          "prior_prob": 0.615
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.21500000000000002
-        },
-        "SELL": {
-          "visits": 2,
-          "q_value": 0.0,
-          "prior_prob": 0.17
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "primary_factors": [
-        "Balanced portfolio state supports holding",
-        "Neutral momentum supports wait-and-see approach"
-      ],
-      "portfolio_analysis": {
-        "current_value": 117498.5929729,
-        "cash_allocation": 1.0,
-        "total_return": 0.0,
-        "risk_level": "LOW"
-      },
-      "mcts_analysis": {
-        "simulations_run": 10,
-        "alternative_actions": {
-          "HOLD": {
-            "visits": 8,
-            "q_value": 0.0,
-            "prior_prob": 0.615
-          },
-          "BUY": {
-            "visits": 0,
-            "q_value": 0.0,
-            "prior_prob": 0.21500000000000002
-          },
-          "SELL": {
-            "visits": 2,
-            "q_value": 0.0,
-            "prior_prob": 0.17
-          }
-        },
-        "consensus_strength": "MODERATE"
-      },
-      "market_conditions": {
-        "trend": "neutral",
-        "momentum": "0.00026322054",
-        "volatility": "0.024284992"
-      }
-    }
-  },
-  {
-    "observation": "[2.2015998e+00 1.8103200e-04 3.4710215e-04 5.4362696e-03 6.6605024e-04\n 2.4248436e-02 1.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00]",
-    "market_context": {
-      "current_price": 110068.39,
-      "price_change_24h": -0.02088265221128597,
-      "momentum": "0.00066605024",
-      "volatility": "0.024248436",
-      "portfolio_value": 117498.5929729,
-      "balance": 117498.5929729,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 117498.5929729,
-          "portfolio_value": 117498.5929729,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110068.39,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "1",
-    "action_name": "BUY",
-    "timestamp": "2025-08-26T13:35:53.776287",
-    "mcts_stats": {
-      "total_simulations": 5,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.64
-        },
-        "BUY": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.19
-        },
-        "SELL": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.17
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "BUY",
-      "confidence": 0.6,
-      "primary_factors": [
-        "High cash allocation suggests buying opportunity",
-        "Positive momentum supports buy decision"
-      ],
-      "portfolio_analysis": {
-        "current_value": 117498.5929729,
-        "cash_allocation": 1.0,
-        "total_return": 0.0,
-        "risk_level": "LOW"
-      },
-      "mcts_analysis": {
-        "simulations_run": 5,
-        "alternative_actions": {
-          "HOLD": {
-            "visits": 3,
-            "q_value": 0.0,
-            "prior_prob": 0.64
-          },
-          "BUY": {
-            "visits": 1,
-            "q_value": 0.0,
-            "prior_prob": 0.19
-          },
-          "SELL": {
-            "visits": 1,
-            "q_value": 0.0,
-            "prior_prob": 0.17
-          }
-        },
-        "consensus_strength": "WEAK"
-      },
-      "market_conditions": {
-        "trend": "neutral",
-        "momentum": "0.00066605024",
-        "volatility": "0.024248436"
-      }
-    }
-  },
-  {
-    "observation": "[ 2.2000537e+00 -1.7063219e-04 -2.2770352e-04 -2.4879392e-04\n -2.3502990e-04  3.0105104e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 110006.69,
-      "price_change_24h": -0.12303186244690478,
-      "momentum": "-0.0002350299",
-      "volatility": "0.00030105104",
-      "portfolio_value": 115148.333836,
-      "balance": 115148.333836,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 115148.333836,
-          "portfolio_value": 115148.333836,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110006.69,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:43:04.983447",
-    "mcts_stats": {
-      "total_simulations": 5,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 4,
-          "q_value": 0.0,
-          "prior_prob": 0.538134328358209
-        },
-        "BUY": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.165
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.29686567164179106
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "primary_factors": [
-        "Balanced portfolio state supports holding",
-        "Neutral momentum supports wait-and-see approach"
-      ],
-      "portfolio_analysis": {
-        "current_value": 115148.333836,
-        "cash_allocation": 1.0,
-        "total_return": 0.0,
-        "risk_level": "LOW"
-      },
-      "mcts_analysis": {
-        "simulations_run": 5,
-        "alternative_actions": {
-          "HOLD": {
-            "visits": 4,
-            "q_value": 0.0,
-            "prior_prob": 0.538134328358209
-          },
-          "BUY": {
-            "visits": 1,
-            "q_value": 0.0,
-            "prior_prob": 0.165
-          },
-          "SELL": {
-            "visits": 0,
-            "q_value": 0.0,
-            "prior_prob": 0.29686567164179106
-          }
-        },
-        "consensus_strength": "MODERATE"
-      },
-      "market_conditions": {
-        "trend": "neutral",
-        "momentum": "-0.0002350299",
-        "volatility": "0.00030105104"
-      }
-    }
-  },
-  {
-    "observation": "[ 2.2003047e+00  8.8714980e-05 -8.3170298e-06 -1.2911393e-04\n  3.2951744e-04  2.9012287e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 110015.24,
-      "price_change_24h": -0.09060526807379805,
-      "momentum": "0.00032951744",
-      "volatility": "0.00029012287",
-      "portfolio_value": 115148.333836,
-      "balance": 115148.333836,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 115148.333836,
-          "portfolio_value": 115148.333836,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110015.24,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "1",
-    "action_name": "BUY",
-    "timestamp": "2025-08-26T13:43:25.332603",
-    "mcts_stats": {
-      "total_simulations": 5,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.64
-        },
-        "BUY": {
-          "visits": 2,
-          "q_value": 0.0,
-          "prior_prob": 0.19
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.17
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "BUY",
-      "confidence": 0.6,
-      "primary_factors": [
-        "High cash allocation suggests buying opportunity",
-        "Positive momentum supports buy decision"
-      ],
-      "portfolio_analysis": {
-        "current_value": 115148.333836,
-        "cash_allocation": 1.0,
-        "total_return": 0.0,
-        "risk_level": "LOW"
-      },
-      "mcts_analysis": {
-        "simulations_run": 5,
-        "alternative_actions": {
-          "HOLD": {
-            "visits": 3,
-            "q_value": 0.0,
-            "prior_prob": 0.64
-          },
-          "BUY": {
-            "visits": 2,
-            "q_value": 0.0,
-            "prior_prob": 0.19
-          },
-          "SELL": {
-            "visits": 0,
-            "q_value": 0.0,
-            "prior_prob": 0.17
-          }
-        },
-        "consensus_strength": "WEAK"
-      },
-      "market_conditions": {
-        "trend": "neutral",
-        "momentum": "0.00032951744",
-        "volatility": "0.00029012287"
-      }
-    }
-  },
-  {
-    "observation": "[ 2.2008355e+00  1.6106611e-04  2.0063290e-04  1.0026647e-04\n -8.3961066e-05  3.0081216e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 110041.77,
-      "price_change_24h": -0.09661529617508763,
-      "momentum": "-8.3961066e-05",
-      "volatility": "0.00030081216",
-      "portfolio_value": 112845.1754967,
-      "balance": 112845.1754967,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 112845.1754967,
-          "portfolio_value": 112845.1754967,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110041.77,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "1",
-    "action_name": "BUY",
-    "timestamp": "2025-08-26T13:44:39.845725",
-    "mcts_stats": {
-      "total_simulations": 7,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "BUY",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[2.2008431e+00 1.7231578e-04 1.5762141e-04 8.6439599e-05 3.2243493e-04\n 2.8504169e-04 1.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00]",
-    "market_context": {
-      "current_price": 110042.16,
-      "price_change_24h": -0.12661815708547053,
-      "momentum": "0.00032243493",
-      "volatility": "0.0002850417",
-      "portfolio_value": 110588.6702191,
-      "balance": 110588.6702191,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 110588.6702191,
-          "portfolio_value": 110588.6702191,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110042.16,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "2",
-    "action_name": "SELL",
-    "timestamp": "2025-08-26T13:46:55.855742",
-    "mcts_stats": {
-      "total_simulations": 1,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.5970149253731343
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.14925373134328357
-        },
-        "SELL": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.2537313432835821
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "SELL",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[2.2008431e+00 1.7231578e-04 1.5762141e-04 8.6439599e-05 3.2243493e-04\n 2.8504169e-04 1.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00]",
-    "market_context": {
-      "current_price": 110042.16,
-      "price_change_24h": -0.12661815708547053,
-      "momentum": "0.00032243493",
-      "volatility": "0.0002850417",
-      "portfolio_value": 119900.6522851,
-      "balance": 119900.6522851,
-      "portfolio_return": 0.08420376199072624,
-      "total_trades": 1,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119900.6522851,
-          "portfolio_value": 119900.6522851,
-          "total_return": 0.08420376199072624,
-          "total_return_usd": 9311.982066000011,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 1,
-          "recent_trades_count": 1,
-          "last_trade": {
-            "id": "16851108",
-            "symbol": "BTCUSDT",
-            "side": "SELL",
-            "quantity": 0.0846,
-            "price": 110070.71,
-            "timestamp": "2025-08-26 13:46:56.361000",
-            "order_id": "16851108",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0842037619907263
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110042.16,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:46:59.134539",
-    "mcts_stats": {
-      "total_simulations": 1,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.7368421052631579
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.2631578947368421
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.0
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[2.2014141e+00 3.1532458e-04 3.7774807e-04 3.2553164e-04 2.6308195e-04\n 2.9434697e-04 1.0842037e+00 1.0842037e+00 8.4203765e-02 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 9.9999998e-03 0.0000000e+00 0.0000000e+00\n 5.0000001e-02 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0842037e+00]",
-    "market_context": {
-      "current_price": 110070.71,
-      "price_change_24h": -0.1305272070652733,
-      "momentum": "0.00026308195",
-      "volatility": "0.00029434697",
-      "portfolio_value": 119900.6522851,
-      "balance": 119900.6522851,
-      "portfolio_return": 0.08420376199072624,
-      "total_trades": 1,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119900.6522851,
-          "portfolio_value": 119900.6522851,
-          "total_return": 0.08420376199072624,
-          "total_return_usd": 9311.982066000011,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 1,
-          "recent_trades_count": 1,
-          "last_trade": {
-            "id": "16851108",
-            "symbol": "BTCUSDT",
-            "side": "SELL",
-            "quantity": 0.0846,
-            "price": 110070.71,
-            "timestamp": "2025-08-26 13:46:56.361000",
-            "order_id": "16851108",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0842037619907263
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110070.71,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "1",
-    "action_name": "BUY",
-    "timestamp": "2025-08-26T13:47:05.013251",
-    "mcts_stats": {
-      "total_simulations": 1,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "BUY",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.2002494e+00 -2.3806392e-04 -1.5162826e-04 -1.9048296e-04\n  6.2178638e-05  3.0371299e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 110012.47,
-      "price_change_24h": -0.2245056934059716,
-      "momentum": "6.217864e-05",
-      "volatility": "0.000303713",
-      "portfolio_value": 117502.2112963,
-      "balance": 117502.2112963,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 117502.2112963,
-          "portfolio_value": 117502.2112963,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110012.47,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:49:32.561892",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.85
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.15
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.0
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.2002494e+00 -2.3806392e-04 -1.5162826e-04 -1.9048296e-04\n  6.2178638e-05  3.0371299e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 110012.47,
-      "price_change_24h": -0.2245056934059716,
-      "momentum": "6.217864e-05",
-      "volatility": "0.000303713",
-      "portfolio_value": 117502.2112963,
-      "balance": 117502.2112963,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 117502.2112963,
-          "portfolio_value": 117502.2112963,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110012.47,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "2",
-    "action_name": "SELL",
-    "timestamp": "2025-08-26T13:49:38.333170",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "SELL",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.2002494e+00 -2.3806392e-04 -1.5162826e-04 -1.9048296e-04\n  6.2178638e-05  3.0371299e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 110007.14,
-      "price_change_24h": -0.19093142854343412,
-      "momentum": "6.217864e-05",
-      "volatility": "0.000303713",
-      "portfolio_value": 119899.2668769,
-      "balance": 119899.2668769,
-      "portfolio_return": 0.02040008910602932,
-      "total_trades": 1,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.2668769,
-          "portfolio_value": 119899.2668769,
-          "total_return": 0.02040008910602932,
-          "total_return_usd": 2397.0555806000048,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 1,
-          "recent_trades_count": 1,
-          "last_trade": {
-            "id": "16851354",
-            "symbol": "BTCUSDT",
-            "side": "SELL",
-            "quantity": 0.02179,
-            "price": 110007.14,
-            "timestamp": "2025-08-26 13:49:38.872000",
-            "order_id": "16851354",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0204000891060294
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110007.14,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:49:43.006291",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 2,
-          "q_value": 0.0,
-          "prior_prob": 0.85
-        },
-        "BUY": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.15
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.0
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.2000000e+00 -3.1709093e-05 -1.9158181e-04 -1.7529092e-04\n -6.4904882e-05  2.3782739e-04  1.0204000e+00  1.0204000e+00\n  2.0400088e-02  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  9.9999998e-03  0.0000000e+00  0.0000000e+00\n  5.0000001e-02  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0204000e+00]",
-    "market_context": {
-      "current_price": 110000.0,
-      "price_change_24h": -0.21274642462270807,
-      "momentum": "-6.490488e-05",
-      "volatility": "0.0002378274",
-      "portfolio_value": 119899.2668769,
-      "balance": 119899.2668769,
-      "portfolio_return": 0.02040008910602932,
-      "total_trades": 1,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.2668769,
-          "portfolio_value": 119899.2668769,
-          "total_return": 0.02040008910602932,
-          "total_return_usd": 2397.0555806000048,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 1,
-          "recent_trades_count": 1,
-          "last_trade": {
-            "id": "16851354",
-            "symbol": "BTCUSDT",
-            "side": "SELL",
-            "quantity": 0.02179,
-            "price": 110007.14,
-            "timestamp": "2025-08-26 13:49:38.872000",
-            "order_id": "16851354",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0204000891060294
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110000.0,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "2",
-    "action_name": "SELL",
-    "timestamp": "2025-08-26T13:49:48.226916",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 2,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "SELL",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.2000003e+00 -1.8654544e-05 -1.8638180e-04 -1.7813635e-04\n -6.4904874e-05  2.3527005e-04  1.0204000e+00  1.0204000e+00\n  2.0400088e-02  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  9.9999998e-03  0.0000000e+00  0.0000000e+00\n  5.0000001e-02  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0204000e+00]",
-    "market_context": {
-      "current_price": 110000.01,
-      "price_change_24h": -0.21272830078348423,
-      "momentum": "-6.4904874e-05",
-      "volatility": "0.00023527005",
-      "portfolio_value": 119899.2668769,
-      "balance": 119899.2668769,
-      "portfolio_return": 0.02040008910602932,
-      "total_trades": 1,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.2668769,
-          "portfolio_value": 119899.2668769,
-          "total_return": 0.02040008910602932,
-          "total_return_usd": 2397.0555806000048,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 1,
-          "recent_trades_count": 1,
-          "last_trade": {
-            "id": "16851354",
-            "symbol": "BTCUSDT",
-            "side": "SELL",
-            "quantity": 0.02179,
-            "price": 110007.14,
-            "timestamp": "2025-08-26 13:49:38.872000",
-            "order_id": "16851354",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0204000891060294
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110000.01,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:49:52.323061",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.9
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.1
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.0
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.2000003e+00 -1.8654544e-05 -1.8638180e-04 -1.7813635e-04\n -6.4904874e-05  2.3527005e-04  1.0204000e+00  1.0204000e+00\n  2.0400088e-02  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  9.9999998e-03  0.0000000e+00  0.0000000e+00\n  5.0000001e-02  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0204000e+00]",
-    "market_context": {
-      "current_price": 110000.01,
-      "price_change_24h": -0.21272830078348423,
-      "momentum": "-6.4904874e-05",
-      "volatility": "0.00023527005",
-      "portfolio_value": 119899.2668769,
-      "balance": 119899.2668769,
-      "portfolio_return": 0.02040008910602932,
-      "total_trades": 1,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.2668769,
-          "portfolio_value": 119899.2668769,
-          "total_return": 0.02040008910602932,
-          "total_return_usd": 2397.0555806000048,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 1,
-          "recent_trades_count": 1,
-          "last_trade": {
-            "id": "16851354",
-            "symbol": "BTCUSDT",
-            "side": "SELL",
-            "quantity": 0.02179,
-            "price": 110007.14,
-            "timestamp": "2025-08-26 13:49:38.872000",
-            "order_id": "16851354",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0204000891060294
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110000.01,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:49:57.443864",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.9
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.1
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.0
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.2000003e+00 -1.8654544e-05 -1.8638180e-04 -1.7813635e-04\n -6.4904874e-05  2.3527005e-04  1.0204000e+00  1.0204000e+00\n  2.0400088e-02  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  9.9999998e-03  0.0000000e+00  0.0000000e+00\n  5.0000001e-02  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0204000e+00]",
-    "market_context": {
-      "current_price": 110000.01,
-      "price_change_24h": -0.21272830078348423,
-      "momentum": "-6.4904874e-05",
-      "volatility": "0.00023527005",
-      "portfolio_value": 119899.2668769,
-      "balance": 119899.2668769,
-      "portfolio_return": 0.02040008910602932,
-      "total_trades": 1,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.2668769,
-          "portfolio_value": 119899.2668769,
-          "total_return": 0.02040008910602932,
-          "total_return_usd": 2397.0555806000048,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 1,
-          "recent_trades_count": 1,
-          "last_trade": {
-            "id": "16851354",
-            "symbol": "BTCUSDT",
-            "side": "SELL",
-            "quantity": 0.02179,
-            "price": 110007.14,
-            "timestamp": "2025-08-26 13:49:38.872000",
-            "order_id": "16851354",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0204000891060294
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110000.01,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:50:02.342577",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.95
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.05
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.0
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.2001426e+00  4.6106103e-05 -6.3850406e-05 -1.2528279e-04\n  3.6271693e-05  2.2291948e-04  1.0204000e+00  1.0204000e+00\n  2.0400088e-02  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  9.9999998e-03  0.0000000e+00  0.0000000e+00\n  5.0000001e-02  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0204000e+00]",
-    "market_context": {
-      "current_price": 110007.13,
-      "price_change_24h": -0.21370118589236234,
-      "momentum": "3.6271693e-05",
-      "volatility": "0.00022291948",
-      "portfolio_value": 119899.2668769,
-      "balance": 119899.2668769,
-      "portfolio_return": 0.02040008910602932,
-      "total_trades": 1,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.2668769,
-          "portfolio_value": 119899.2668769,
-          "total_return": 0.02040008910602932,
-          "total_return_usd": 2397.0555806000048,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 1,
-          "recent_trades_count": 1,
-          "last_trade": {
-            "id": "16851354",
-            "symbol": "BTCUSDT",
-            "side": "SELL",
-            "quantity": 0.02179,
-            "price": 110007.14,
-            "timestamp": "2025-08-26 13:49:38.872000",
-            "order_id": "16851354",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0204000891060294
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110007.13,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "1",
-    "action_name": "BUY",
-    "timestamp": "2025-08-26T13:50:08.677130",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 2,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "BUY",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[2.2007999e+00 2.7780808e-04 2.6683934e-04 1.6780716e-04 3.6354543e-04\n 2.2579527e-04 1.0204000e+00 1.0204000e+00 2.0400088e-02 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 9.9999998e-03 0.0000000e+00 0.0000000e+00\n 5.0000001e-02 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0204000e+00]",
-    "market_context": {
-      "current_price": 110040.0,
-      "price_change_24h": -0.1897609969268772,
-      "momentum": "0.00036354543",
-      "volatility": "0.00022579527",
-      "portfolio_value": 119899.26687689999,
-      "balance": 117501.4952769,
-      "portfolio_return": 0.020400089106029196,
-      "total_trades": 2,
-      "position_size": 0.02179,
-      "position_exposure": 1.9998217357423718,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 117501.4952769,
-          "portfolio_value": 119899.26687689999,
-          "total_return": 0.020400089106029196,
-          "total_return_usd": 2397.05558059999,
-          "cash_allocation": 0.9800017826425763
-        },
-        "positions": {
-          "BTCUSDT": {
-            "quantity": 0.02179,
-            "avg_price": 110040.0,
-            "current_price": 110040.0,
-            "position_value": 2397.7716,
-            "unrealized_pnl": 0.0,
-            "unrealized_pnl_pct": 0.0,
-            "weight": 0.019998217357423718,
-            "days_held": 0
-          }
-        },
-        "trading_performance": {
-          "total_trades": 2,
-          "recent_trades_count": 2,
-          "last_trade": {
-            "id": "16851409",
-            "symbol": "BTCUSDT",
-            "side": "BUY",
-            "quantity": 0.02179,
-            "price": 110040.0,
-            "timestamp": "2025-08-26 13:50:09.155000",
-            "order_id": "16851409",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0.019998217357423718,
-          "total_position_weight": 0.019998217357423687,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0204000891060292
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110040.0,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:50:13.863973",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 3,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[2.2007999e+00 2.0512541e-04 2.5713377e-04 1.6260451e-04 3.6363635e-04\n 2.2838787e-04 9.9999392e-01 1.0204000e+00 2.0400088e-02 9.8000181e-01\n 1.9998217e-02 2.1790000e-02 1.9998217e-02 1.0000000e+00 0.0000000e+00\n 0.0000000e+00 1.0000000e+00 2.0000000e-02 0.0000000e+00 0.0000000e+00\n 1.0000000e-01 1.9998217e-02 9.8000181e-01 0.0000000e+00 1.0204000e+00]",
-    "market_context": {
-      "current_price": 110040.0,
-      "price_change_24h": -0.16322822255979294,
-      "momentum": "0.00036363635",
-      "volatility": "0.00022838787",
-      "portfolio_value": 119899.26687689999,
-      "balance": 117501.4952769,
-      "portfolio_return": 0.020400089106029196,
-      "total_trades": 2,
-      "position_size": 0.02179,
-      "position_exposure": 1.9998217357423718,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 117501.4952769,
-          "portfolio_value": 119899.26687689999,
-          "total_return": 0.020400089106029196,
-          "total_return_usd": 2397.05558059999,
-          "cash_allocation": 0.9800017826425763
-        },
-        "positions": {
-          "BTCUSDT": {
-            "quantity": 0.02179,
-            "avg_price": 110040.0,
-            "current_price": 110040.0,
-            "position_value": 2397.7716,
-            "unrealized_pnl": 0.0,
-            "unrealized_pnl_pct": 0.0,
-            "weight": 0.019998217357423718,
-            "days_held": 0
-          }
-        },
-        "trading_performance": {
-          "total_trades": 2,
-          "recent_trades_count": 2,
-          "last_trade": {
-            "id": "16851409",
-            "symbol": "BTCUSDT",
-            "side": "BUY",
-            "quantity": 0.02179,
-            "price": 110040.0,
-            "timestamp": "2025-08-26 13:50:09.155000",
-            "order_id": "16851409",
-            "status": "FILLED"
-          },
-          "recent_win_rate": 1.0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0.019998217357423718,
-          "total_position_weight": 0.019998217357423687,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0204000891060292
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 110040.0,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "2",
-    "action_name": "SELL",
-    "timestamp": "2025-08-26T13:50:17.980591",
-    "mcts_stats": {
-      "total_simulations": 3,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 2,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "SELL",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.1989999e+00  1.3851751e-04 -1.6110050e-04 -4.5541156e-04\n  2.0850185e-04  4.4494399e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 109953.81,
-      "price_change_24h": -0.26793842785813043,
-      "momentum": "0.00020850185",
-      "volatility": "0.000444944",
-      "portfolio_value": 119899.3512042,
-      "balance": 119899.3512042,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.3512042,
-          "portfolio_value": 119899.3512042,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 109953.81,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:57:30.282564",
-    "mcts_stats": {
-      "total_simulations": 1,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.1989999e+00  1.3851751e-04 -1.6110050e-04 -4.5541156e-04\n  2.0850185e-04  4.4494399e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 109953.81,
-      "price_change_24h": -0.26793842785813043,
-      "momentum": "0.00020850185",
-      "volatility": "0.000444944",
-      "portfolio_value": 119899.3512042,
-      "balance": 119899.3512042,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.3512042,
-          "portfolio_value": 119899.3512042,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 109953.81,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:57:33.664992",
-    "mcts_stats": {
-      "total_simulations": 1,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.1995735e+00  3.0542284e-04  1.4576461e-04 -1.7184240e-04\n  2.5547840e-04  4.4273035e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 109978.68,
-      "price_change_24h": -0.21886245416096825,
-      "momentum": "0.0002554784",
-      "volatility": "0.00044273035",
-      "portfolio_value": 119899.3512042,
-      "balance": 119899.3512042,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.3512042,
-          "portfolio_value": 119899.3512042,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 109978.68,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:57:36.001755",
-    "mcts_stats": {
-      "total_simulations": 1,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.95
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.05
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.0
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.1995735e+00  2.5434021e-04  1.7163326e-04 -1.4121374e-04\n  7.3978107e-04  4.3226258e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 109978.68,
-      "price_change_24h": -0.20224759068746817,
-      "momentum": "0.00073978107",
-      "volatility": "0.00043226258",
-      "portfolio_value": 119899.3512042,
-      "balance": 119899.3512042,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.3512042,
-          "portfolio_value": 119899.3512042,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 109978.68,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T13:57:38.818963",
-    "mcts_stats": {
-      "total_simulations": 1,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.95
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.05
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.0
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.1997633e+00  3.8349579e-05  1.5280735e-04 -6.0642884e-05\n  3.5807575e-04  4.0689425e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 109987.37,
-      "price_change_24h": -0.1753485210686527,
-      "momentum": "0.00035807575",
-      "volatility": "0.00040689425",
-      "portfolio_value": 119899.3512042,
-      "balance": 119899.3512042,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.3512042,
-          "portfolio_value": 119899.3512042,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 109987.37,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T14:00:18.858405",
-    "mcts_stats": {
-      "total_simulations": 1,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.95
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.05
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.0
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
-    "observation": "[ 2.1997473e+00 -3.9059028e-05  1.9336765e-04 -7.1721872e-05\n  4.2734006e-05  4.0588289e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
-    "market_context": {
-      "current_price": 109987.37,
-      "price_change_24h": -0.22503652183000944,
-      "momentum": "4.2734006e-05",
-      "volatility": "0.0004058829",
-      "portfolio_value": 119899.3512042,
-      "balance": 119899.3512042,
-      "portfolio_return": 0.0,
-      "total_trades": 0,
-      "position_size": 0,
-      "position_exposure": 0,
-      "trend": "neutral",
-      "recent_performance": 0,
-      "ma_trend": "neutral",
-      "portfolio_context": {
-        "account_overview": {
-          "balance": 119899.3512042,
-          "portfolio_value": 119899.3512042,
-          "total_return": 0.0,
-          "total_return_usd": 0.0,
-          "cash_allocation": 1.0
-        },
-        "positions": {},
-        "trading_performance": {
-          "total_trades": 0,
-          "recent_trades_count": 0,
-          "last_trade": null,
-          "recent_win_rate": 0
-        },
-        "risk_metrics": {
-          "max_position_weight": 0,
-          "total_position_weight": 0.0,
-          "drawdown_from_peak": 0,
-          "account_growth_multiple": 1.0
-        },
-        "market_context": {
-          "current_symbol": "BTCUSDT",
-          "current_price": 109987.37,
-          "price_change_24h": 0.0,
-          "market_session": "active"
-        }
-      }
-    },
-    "action": "0",
-    "action_name": "HOLD",
-    "timestamp": "2025-08-26T14:00:22.020912",
-    "mcts_stats": {
-      "total_simulations": 1,
-      "root_value": 0.0,
-      "children_stats": {
-        "HOLD": {
-          "visits": 1,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "BUY": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.33
-        },
-        "SELL": {
-          "visits": 0,
-          "q_value": 0.0,
-          "prior_prob": 0.34
-        }
-      }
-    },
-    "ai_reasoning": {
-      "decision": "HOLD",
-      "confidence": 0.8,
-      "simplified": true
-    }
-  },
-  {
     "observation": "[ 2.1997473e+00 -1.4183447e-06  9.7374817e-05 -2.3484514e-05\n -7.2735097e-06  3.8890439e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
     "market_context": {
       "current_price": 109987.37,
@@ -7878,6 +5612,2526 @@
     },
     "ai_reasoning": {
       "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2224605e+00 -1.7998069e-08 -1.2085704e-05 -2.8242121e-04\n  0.0000000e+00  4.4643189e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111123.03,
+      "price_change_24h": -0.42155696220908245,
+      "momentum": "0.0",
+      "volatility": "0.0004464319",
+      "portfolio_value": 112838.6160916,
+      "balance": 112838.6160916,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 112838.6160916,
+          "portfolio_value": 112838.6160916,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111123.03,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T13:53:27.531710",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2219429e+00 -2.7840497e-04 -2.3775587e-04 -3.9720640e-04\n -2.3289502e-04  3.0283103e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111097.15,
+      "price_change_24h": -0.4943880888279295,
+      "momentum": "-0.00023289502",
+      "volatility": "0.00030283103",
+      "portfolio_value": 112838.6160916,
+      "balance": 112838.6160916,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 112838.6160916,
+          "portfolio_value": 112838.6160916,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111097.15,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T13:55:33.335135",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 4,
+          "q_value": 0.0,
+          "prior_prob": 0.665
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.165
+        },
+        "SELL": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.17
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2219429e+00 -2.3181512e-04 -2.2451521e-04 -3.5091359e-04\n -2.3289502e-04  2.8895153e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111097.15,
+      "price_change_24h": -0.45340114025445993,
+      "momentum": "-0.00023289502",
+      "volatility": "0.00028895153",
+      "portfolio_value": 112838.6160916,
+      "balance": 112838.6160916,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 112838.6160916,
+          "portfolio_value": 112838.6160916,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111097.15,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T13:55:49.510224",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 4,
+          "q_value": 0.0,
+          "prior_prob": 0.615
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.21500000000000002
+        },
+        "SELL": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.17
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2215173e+00 -1.1494846e-04 -3.1580217e-04 -4.0515550e-04\n -1.9154407e-04  2.3046903e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111075.87,
+      "price_change_24h": -0.3623078877898732,
+      "momentum": "-0.00019154407",
+      "volatility": "0.00023046903",
+      "portfolio_value": 112838.6160916,
+      "balance": 112838.6160916,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 112838.6160916,
+          "portfolio_value": 112838.6160916,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111075.87,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T13:56:06.071204",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2215173e+00 -3.8316153e-05 -2.3087823e-04 -3.6119457e-04\n -1.9154407e-04  2.5911641e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111077.51,
+      "price_change_24h": -0.4208541407134821,
+      "momentum": "-0.00019154407",
+      "volatility": "0.0002591164",
+      "portfolio_value": 112838.6160916,
+      "balance": 112838.6160916,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 112838.6160916,
+          "portfolio_value": 112838.6160916,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111077.51,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T13:56:25.733443",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.59
+        },
+        "BUY": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.24
+        },
+        "SELL": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.17
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2214229e+00 -4.2891428e-05 -8.1056161e-05 -2.7652096e-04\n -4.2583506e-05  2.3572044e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111071.14,
+      "price_change_24h": -0.33584152673120066,
+      "momentum": "-4.2583506e-05",
+      "volatility": "0.00023572044",
+      "portfolio_value": 112838.6160916,
+      "balance": 112838.6160916,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 112838.6160916,
+          "portfolio_value": 112838.6160916,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111071.14,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T13:56:52.127951",
+    "mcts_stats": {
+      "total_simulations": 6,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 4,
+          "q_value": 0.0,
+          "prior_prob": 0.515
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.265
+        },
+        "SELL": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.22000000000000003
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2205620e+00 -5.9766852e-04 -7.2853628e-04 -8.6881156e-04\n -8.5427833e-04  3.4053944e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111028.1,
+      "price_change_24h": -0.3756323761136734,
+      "momentum": "-0.00085427833",
+      "volatility": "0.00034053944",
+      "portfolio_value": 112838.6157868,
+      "balance": 112838.6157868,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 112838.6157868,
+          "portfolio_value": 112838.6157868,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111028.1,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "2",
+    "action_name": "SELL",
+    "timestamp": "2025-08-27T13:58:21.076177",
+    "mcts_stats": {
+      "total_simulations": 19,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 6,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 7,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 6,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "SELL",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2205620e+00  1.8013457e-08 -2.9882524e-04 -5.9690297e-04\n  0.0000000e+00  4.4249851e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111028.09,
+      "price_change_24h": -0.3744703012470156,
+      "momentum": "0.0",
+      "volatility": "0.0004424985",
+      "portfolio_value": 119973.2808502,
+      "balance": 119973.2808502,
+      "portfolio_return": 0.06322893110351871,
+      "total_trades": 1,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2808502,
+          "portfolio_value": 119973.2808502,
+          "total_return": 0.06322893110351871,
+          "total_return_usd": 7134.665063399996,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 1,
+          "recent_trades_count": 1,
+          "last_trade": {
+            "id": "16991777",
+            "symbol": "BTCUSDT",
+            "side": "SELL",
+            "quantity": 0.06426,
+            "price": 111028.09,
+            "timestamp": "2025-08-27 13:58:23.468000",
+            "order_id": "16991777",
+            "status": "FILLED"
+          },
+          "recent_win_rate": 1.0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0632289311035188
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111028.09,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T13:58:58.492627",
+    "mcts_stats": {
+      "total_simulations": 16,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 11,
+          "q_value": 0.0,
+          "prior_prob": 0.665
+        },
+        "BUY": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.165
+        },
+        "SELL": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.17
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2210443e+00  1.3035309e-04  1.7378310e-04 -1.6869992e-04\n  2.1724230e-04  4.2439555e-04  1.0632290e+00  1.0632290e+00\n  6.3228928e-02  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  9.9999998e-03  0.0000000e+00  0.0000000e+00\n  5.0000001e-02  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0632290e+00]",
+    "market_context": {
+      "current_price": 111052.22,
+      "price_change_24h": -0.2670508501244464,
+      "momentum": "0.0002172423",
+      "volatility": "0.00042439555",
+      "portfolio_value": 119973.2808502,
+      "balance": 119973.2808502,
+      "portfolio_return": 0.06322893110351871,
+      "total_trades": 1,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2808502,
+          "portfolio_value": 119973.2808502,
+          "total_return": 0.06322893110351871,
+          "total_return_usd": 7134.665063399996,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 1,
+          "recent_trades_count": 1,
+          "last_trade": {
+            "id": "16991777",
+            "symbol": "BTCUSDT",
+            "side": "SELL",
+            "quantity": 0.06426,
+            "price": 111028.09,
+            "timestamp": "2025-08-27 13:58:23.468000",
+            "order_id": "16991777",
+            "status": "FILLED"
+          },
+          "recent_win_rate": 1.0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0632289311035188
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111052.22,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T13:59:55.601774",
+    "mcts_stats": {
+      "total_simulations": 16,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 5,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 6,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 5,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[2.2208018e+00 8.6887536e-05 6.3436550e-05 6.3999410e-05 1.0862122e-04\n 7.7336561e-05 1.0632290e+00 1.0632290e+00 6.3228928e-02 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 9.9999998e-03 0.0000000e+00 0.0000000e+00\n 5.0000001e-02 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0632290e+00]",
+    "market_context": {
+      "current_price": 111040.1,
+      "price_change_24h": -0.28726652298850053,
+      "momentum": "0.00010862122",
+      "volatility": "7.733656e-05",
+      "portfolio_value": 119973.2808502,
+      "balance": 119973.2808502,
+      "portfolio_return": 0.06322893110351871,
+      "total_trades": 1,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2808502,
+          "portfolio_value": 119973.2808502,
+          "total_return": 0.06322893110351871,
+          "total_return_usd": 7134.665063399996,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 1,
+          "recent_trades_count": 1,
+          "last_trade": {
+            "id": "16991777",
+            "symbol": "BTCUSDT",
+            "side": "SELL",
+            "quantity": 0.06426,
+            "price": 111028.09,
+            "timestamp": "2025-08-27 13:58:23.468000",
+            "order_id": "16991777",
+            "status": "FILLED"
+          },
+          "recent_win_rate": 1.0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0632289311035188
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111040.1,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "2",
+    "action_name": "SELL",
+    "timestamp": "2025-08-27T14:00:53.386432",
+    "mcts_stats": {
+      "total_simulations": 16,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 5,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 5,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 6,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "SELL",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[2.2215354e+00 4.0620555e-05 1.4731253e-04 2.7258624e-04 2.0323410e-04\n 1.5850045e-04 1.0632290e+00 1.0632290e+00 6.3228928e-02 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 9.9999998e-03 0.0000000e+00 0.0000000e+00\n 5.0000001e-02 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0632290e+00]",
+    "market_context": {
+      "current_price": 111076.77,
+      "price_change_24h": -0.2722481594541174,
+      "momentum": "0.0002032341",
+      "volatility": "0.00015850045",
+      "portfolio_value": 119973.2808502,
+      "balance": 119973.2808502,
+      "portfolio_return": 0.06322893110351871,
+      "total_trades": 1,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2808502,
+          "portfolio_value": 119973.2808502,
+          "total_return": 0.06322893110351871,
+          "total_return_usd": 7134.665063399996,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 1,
+          "recent_trades_count": 1,
+          "last_trade": {
+            "id": "16991777",
+            "symbol": "BTCUSDT",
+            "side": "SELL",
+            "quantity": 0.06426,
+            "price": 111028.09,
+            "timestamp": "2025-08-27 13:58:23.468000",
+            "order_id": "16991777",
+            "status": "FILLED"
+          },
+          "recent_win_rate": 1.0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0632289311035188
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111076.77,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "2",
+    "action_name": "SELL",
+    "timestamp": "2025-08-27T14:01:50.826300",
+    "mcts_stats": {
+      "total_simulations": 21,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 7,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 7,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 7,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "SELL",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[2.2221076e+00 3.3733741e-05 9.8420074e-05 2.6810582e-04 1.6896726e-04\n 2.0279970e-04 1.0632290e+00 1.0632290e+00 6.3228928e-02 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 9.9999998e-03 0.0000000e+00 0.0000000e+00\n 5.0000001e-02 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0632290e+00]",
+    "market_context": {
+      "current_price": 111105.38,
+      "price_change_24h": -0.23955713177203536,
+      "momentum": "0.00016896726",
+      "volatility": "0.0002027997",
+      "portfolio_value": 119973.2808502,
+      "balance": 119973.2808502,
+      "portfolio_return": 0.06322893110351871,
+      "total_trades": 1,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2808502,
+          "portfolio_value": 119973.2808502,
+          "total_return": 0.06322893110351871,
+          "total_return_usd": 7134.665063399996,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 1,
+          "recent_trades_count": 1,
+          "last_trade": {
+            "id": "16991777",
+            "symbol": "BTCUSDT",
+            "side": "SELL",
+            "quantity": 0.06426,
+            "price": 111028.09,
+            "timestamp": "2025-08-27 13:58:23.468000",
+            "order_id": "16991777",
+            "status": "FILLED"
+          },
+          "recent_win_rate": 1.0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0632289311035188
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111105.38,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:02:48.858956",
+    "mcts_stats": {
+      "total_simulations": 17,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 9,
+          "q_value": 0.0,
+          "prior_prob": 0.59
+        },
+        "BUY": {
+          "visits": 5,
+          "q_value": 0.0,
+          "prior_prob": 0.24
+        },
+        "SELL": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.17
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2216997e+00  2.9364906e-05  3.5765410e-05 -1.5942749e-04\n  4.0417831e-04  3.2735491e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111084.98,
+      "price_change_24h": -0.33507553711719584,
+      "momentum": "0.0004041783",
+      "volatility": "0.0003273549",
+      "portfolio_value": 119973.2807486,
+      "balance": 119973.2807486,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2807486,
+          "portfolio_value": 119973.2807486,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111084.98,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T14:03:39.247618",
+    "mcts_stats": {
+      "total_simulations": 8,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 6,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2212465e+00 -8.1611841e-05 -4.7423826e-05 -2.7151423e-04\n -2.0398798e-04  3.1857518e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111062.32,
+      "price_change_24h": -0.2579803174830069,
+      "momentum": "-0.00020398798",
+      "volatility": "0.00031857518",
+      "portfolio_value": 119973.2807486,
+      "balance": 119973.2807486,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2807486,
+          "portfolio_value": 119973.2807486,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111062.32,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:04:20.508410",
+    "mcts_stats": {
+      "total_simulations": 8,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 6,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2212462e+00 -3.6015820e-08 -7.9639976e-05 -1.6619949e-04\n -9.0039535e-08  3.0274189e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111062.31,
+      "price_change_24h": -0.3372007127186722,
+      "momentum": "-9.0039535e-08",
+      "volatility": "0.0003027419",
+      "portfolio_value": 119973.2807486,
+      "balance": 119973.2807486,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2807486,
+          "portfolio_value": 119973.2807486,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111062.31,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:05:02.288380",
+    "mcts_stats": {
+      "total_simulations": 10,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 7,
+          "q_value": 0.0,
+          "prior_prob": 0.665
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.165
+        },
+        "SELL": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.17
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2208469e+00 -7.1900497e-05 -1.2585288e-04 -1.8663150e-04\n -1.7971893e-04  1.6898320e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111042.35,
+      "price_change_24h": -0.39209913646872757,
+      "momentum": "-0.00017971893",
+      "volatility": "0.0001689832",
+      "portfolio_value": 119973.2807486,
+      "balance": 119973.2807486,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2807486,
+          "portfolio_value": 119973.2807486,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111042.35,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T14:05:42.738722",
+    "mcts_stats": {
+      "total_simulations": 11,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 5,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2205594e+00 -1.0880141e-05 -1.2413088e-04 -2.6042986e-04\n -1.2950014e-04  2.0816013e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111027.97,
+      "price_change_24h": -0.2813960823874107,
+      "momentum": "-0.00012950014",
+      "volatility": "0.00020816013",
+      "portfolio_value": 119973.2807486,
+      "balance": 119973.2807486,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2807486,
+          "portfolio_value": 119973.2807486,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111027.97,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:06:24.721726",
+    "mcts_stats": {
+      "total_simulations": 8,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.59
+        },
+        "BUY": {
+          "visits": 4,
+          "q_value": 0.0,
+          "prior_prob": 0.24
+        },
+        "SELL": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.17
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2207663e+00  3.3808152e-05 -1.4905666e-04 -3.9278786e-04\n -2.1609491e-04  3.9270715e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111079.74,
+      "price_change_24h": -0.24233589385788118,
+      "momentum": "-0.00021609491",
+      "volatility": "0.00039270715",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111079.74,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:07:53.560573",
+    "mcts_stats": {
+      "total_simulations": 7,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[2.2215948e+00 3.0806698e-04 1.6351316e-04 2.0399759e-05 5.7270942e-04\n 3.7166727e-04 1.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00]",
+    "market_context": {
+      "current_price": 111079.74,
+      "price_change_24h": -0.2796628748072241,
+      "momentum": "0.0005727094",
+      "volatility": "0.00037166727",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111079.74,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "2",
+    "action_name": "SELL",
+    "timestamp": "2025-08-27T14:08:08.167143",
+    "mcts_stats": {
+      "total_simulations": 7,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "SELL",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2209864e+00 -1.4453038e-04 -4.7816593e-05 -2.0084319e-04\n  9.9154968e-05  3.4897562e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111049.32,
+      "price_change_24h": -0.3175853602663807,
+      "momentum": "9.915497e-05",
+      "volatility": "0.00034897562",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111049.32,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T14:08:27.501178",
+    "mcts_stats": {
+      "total_simulations": 7,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2209864e+00 -1.0955492e-04 -3.9982233e-06 -1.3446278e-04\n -2.7385732e-04  3.1623748e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111049.32,
+      "price_change_24h": -0.38584686362851006,
+      "momentum": "-0.00027385732",
+      "volatility": "0.00031623748",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111049.32,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T14:08:35.503699",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.9
+        },
+        "BUY": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.05
+        },
+        "SELL": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.05
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2209864e+00  3.6020030e-08 -7.2247181e-05 -5.6474906e-05\n  9.0050086e-08  2.1666166e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111049.32,
+      "price_change_24h": -0.27898706896551095,
+      "momentum": "9.005009e-08",
+      "volatility": "0.00021666166",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111049.32,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T14:08:44.295349",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2209864e+00  3.6020030e-08  3.6020030e-08 -4.9131322e-05\n  0.0000000e+00  1.9423169e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111049.32,
+      "price_change_24h": -0.2736138800581865,
+      "momentum": "0.0",
+      "volatility": "0.00019423169",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111049.32,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:08:51.872908",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.85
+        },
+        "BUY": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.15
+        },
+        "SELL": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.0
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2209861e+00 -5.4030053e-08 -5.4030053e-08 -7.9199053e-06\n -9.0050079e-08  1.4894237e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111049.31,
+      "price_change_24h": -0.3081265585648697,
+      "momentum": "-9.005008e-08",
+      "volatility": "0.00014894237",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111049.31,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:08:58.180683",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2209861e+00 -3.6020033e-08 -4.5025043e-08 -2.0666496e-06\n  0.0000000e+00  1.4682417e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111049.31,
+      "price_change_24h": -0.3328571179834706,
+      "momentum": "0.0",
+      "volatility": "0.00014682417",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111049.31,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:09:05.147150",
+    "mcts_stats": {
+      "total_simulations": 7,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[2.2210841e+00 3.5190023e-05 3.9593280e-05 3.6630761e-05 4.3944437e-05\n 1.4631177e-04 1.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00]",
+    "market_context": {
+      "current_price": 111054.2,
+      "price_change_24h": -0.298984003821622,
+      "momentum": "4.3944437e-05",
+      "volatility": "0.00014631177",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111054.2,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "2",
+    "action_name": "SELL",
+    "timestamp": "2025-08-27T14:09:12.019838",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "SELL",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[2.2210841e+00 2.6401523e-05 3.5190023e-05 1.9503990e-05 4.3944437e-05\n 1.2845657e-04 1.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00 0.0000000e+00\n 0.0000000e+00 0.0000000e+00 1.0000000e+00 0.0000000e+00 1.0000000e+00]",
+    "market_context": {
+      "current_price": 111054.2,
+      "price_change_24h": -0.28355035319659105,
+      "momentum": "4.3944437e-05",
+      "volatility": "0.00012845657",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111054.2,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:09:18.966931",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.7
+        },
+        "BUY": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.3
+        },
+        "SELL": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.0
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2210841e+00  8.8245197e-06  2.6401523e-05 -5.9025233e-06\n  4.4034492e-05  9.5687043e-05  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111054.2,
+      "price_change_24h": -0.291518437650081,
+      "momentum": "4.4034492e-05",
+      "volatility": "9.568704e-05",
+      "portfolio_value": 119973.2805325,
+      "balance": 119973.2805325,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2805325,
+          "portfolio_value": 119973.2805325,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111054.2,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:09:25.768251",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2212052e+00  7.9488382e-05  3.0848118e-05 -1.2018700e-04\n  4.1985829e-04  3.5901825e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111060.26,
+      "price_change_24h": -0.33904029933036084,
+      "momentum": "0.0004198583",
+      "volatility": "0.00035901825",
+      "portfolio_value": 119973.2802085,
+      "balance": 119973.2802085,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2802085,
+          "portfolio_value": 119973.2802085,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111060.26,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "2",
+    "action_name": "SELL",
+    "timestamp": "2025-08-27T14:11:18.000665",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 4,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "SELL",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2212052e+00 -4.4480357e-06  7.1474708e-05 -9.1927570e-05\n -1.7536951e-04  3.4485583e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111060.26,
+      "price_change_24h": -0.3077651685159272,
+      "momentum": "-0.00017536951",
+      "volatility": "0.00034485583",
+      "portfolio_value": 119973.2802085,
+      "balance": 119973.2802085,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2802085,
+          "portfolio_value": 119973.2802085,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111060.26,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:11:32.750173",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 5,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2212052e+00 -4.4480357e-06  7.1474708e-05 -9.1927570e-05\n -1.7536951e-04  3.4485583e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111060.26,
+      "price_change_24h": -0.3077651685159272,
+      "momentum": "-0.00017536951",
+      "volatility": "0.00034485583",
+      "portfolio_value": 119973.2802085,
+      "balance": 119973.2802085,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2802085,
+          "portfolio_value": 119973.2802085,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111060.26,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "1",
+    "action_name": "BUY",
+    "timestamp": "2025-08-27T14:11:49.132154",
+    "mcts_stats": {
+      "total_simulations": 6,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 4,
+          "q_value": 0.0,
+          "prior_prob": 0.515
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.315
+        },
+        "SELL": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.17
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "BUY",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2212052e+00  1.0912994e-05  9.5578740e-05 -3.5408706e-05\n  5.4567950e-05  3.0691011e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111049.41,
+      "price_change_24h": -0.3857661312675922,
+      "momentum": "5.456795e-05",
+      "volatility": "0.0003069101",
+      "portfolio_value": 119973.2802085,
+      "balance": 119973.2802085,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2802085,
+          "portfolio_value": 119973.2802085,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111049.41,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "2",
+    "action_name": "SELL",
+    "timestamp": "2025-08-27T14:12:07.674874",
+    "mcts_stats": {
+      "total_simulations": 7,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "BUY": {
+          "visits": 1,
+          "q_value": 0.0,
+          "prior_prob": 0.33
+        },
+        "SELL": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.34
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "SELL",
+      "confidence": 0.8,
+      "simplified": true
+    }
+  },
+  {
+    "observation": "[ 2.2209880e+00 -3.9135735e-05 -7.0689261e-05 -5.5335735e-05\n -9.7784752e-05  2.0256454e-04  1.0000000e+00  1.0000000e+00\n  0.0000000e+00  1.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  0.0000000e+00  0.0000000e+00\n  0.0000000e+00  0.0000000e+00  1.0000000e+00  0.0000000e+00\n  1.0000000e+00]",
+    "market_context": {
+      "current_price": 111049.4,
+      "price_change_24h": -0.3134420845797327,
+      "momentum": "-9.778475e-05",
+      "volatility": "0.00020256454",
+      "portfolio_value": 119973.2802085,
+      "balance": 119973.2802085,
+      "portfolio_return": 0.0,
+      "total_trades": 0,
+      "position_size": 0,
+      "position_exposure": 0,
+      "trend": "neutral",
+      "recent_performance": 0,
+      "ma_trend": "neutral",
+      "portfolio_context": {
+        "account_overview": {
+          "balance": 119973.2802085,
+          "portfolio_value": 119973.2802085,
+          "total_return": 0.0,
+          "total_return_usd": 0.0,
+          "cash_allocation": 1.0
+        },
+        "positions": {},
+        "trading_performance": {
+          "total_trades": 0,
+          "recent_trades_count": 0,
+          "last_trade": null,
+          "recent_win_rate": 0
+        },
+        "risk_metrics": {
+          "max_position_weight": 0,
+          "total_position_weight": 0.0,
+          "drawdown_from_peak": 0,
+          "account_growth_multiple": 1.0
+        },
+        "market_context": {
+          "current_symbol": "BTCUSDT",
+          "current_price": 111049.4,
+          "price_change_24h": 0.0,
+          "market_session": "active"
+        }
+      }
+    },
+    "action": "0",
+    "action_name": "HOLD",
+    "timestamp": "2025-08-27T14:12:30.365600",
+    "mcts_stats": {
+      "total_simulations": 5,
+      "root_value": 0.0,
+      "children_stats": {
+        "HOLD": {
+          "visits": 3,
+          "q_value": 0.0,
+          "prior_prob": 0.665
+        },
+        "BUY": {
+          "visits": 2,
+          "q_value": 0.0,
+          "prior_prob": 0.165
+        },
+        "SELL": {
+          "visits": 0,
+          "q_value": 0.0,
+          "prior_prob": 0.17
+        }
+      }
+    },
+    "ai_reasoning": {
+      "decision": "HOLD",
       "confidence": 0.8,
       "simplified": true
     }
